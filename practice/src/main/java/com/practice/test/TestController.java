@@ -12,6 +12,7 @@ import aj.org.objectweb.asm.Attribute;
 
 /**
  * @author sanghoyun 수정 1
+ * 수정2
  *
  */
 @RequestMapping("test")
@@ -19,7 +20,6 @@ import aj.org.objectweb.asm.Attribute;
 public class TestController 
 {
 
-	
 	@Resource(name = "testDao")
 	private TestDao tDao;
 	
