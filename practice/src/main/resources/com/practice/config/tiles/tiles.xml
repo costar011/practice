@@ -16,9 +16,43 @@
            <put-attribute name="content" value="/WEB-INF/views/template/hello.jsp"/>
         </definition>
         
-         
+         <!-- Main -->
         <definition name="main" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/main/mainPage.jsp"/>
+        </definition>
+        
+        <!-- Student Information Page -->
+        <definition name="studentPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/student_information/student_information.jsp"/>
+        </definition>
+        
+        <!-- community Place Page -->
+         <definition name="communityPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/community_place/community_place.jsp"/>
+        </definition>
+        
+        <!-- Payment Management Page -->
+        <definition name="paymentPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/payment_management/payment_management.jsp"/>
+        </definition>
+        
+        
+         <!--  -->
+        <definition name="" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
+        </definition>
+        
+        
+         <!--  -->
+        <definition name="" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
+        </definition>
+        
+        
+        
+         <!-- -->
+        <definition name="" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
         </definition>
         
         
