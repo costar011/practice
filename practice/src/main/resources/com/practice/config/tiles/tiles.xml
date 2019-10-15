@@ -37,23 +37,33 @@
         </definition>
         
         
-         <!--  -->
+         <!--School Document Page  -->
+        <definition name="schooldocumentPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/school_document/school_document.jsp"/>
+        </definition>
+        
+        
+         <!-- School Events Page -->
+        <definition name="schooleventsPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/school_events/school_events.jsp"/>
+        </definition>
+        
+        
+        
+          <!--Sign In Page -->
+        <definition name="sgininPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
+        </definition>
+        
+        
+        
+          <!--Login Page -->
         <definition name="" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
         </definition>
         
         
-         <!--  -->
-        <definition name="" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
-        </definition>
         
-        
-        
-         <!-- -->
-        <definition name="" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
-        </definition>
         
         
       
