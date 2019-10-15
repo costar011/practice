@@ -10,8 +10,10 @@
 	
 	<select id="select2" resultType="testVO">
 		
-		SELECT NAME,
-			   EMAIL
+		SELECT UID
+			   ,ID
+			   ,PASS
+			   ,NAME
 		  FROM USER
 	
 	</select>
