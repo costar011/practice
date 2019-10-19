@@ -10,7 +10,7 @@
 
 <div class="col-md-8">
 
-	<form action="${pageContext.request.contextPath }/signup/joinUser">
+	<form action="${pageContext.request.contextPath }/signup/joinuser">
 		<br> <br>
 		<input type="text" class="form-control" id="name" name="name" placeholder="NAME">
 		<br> <br>

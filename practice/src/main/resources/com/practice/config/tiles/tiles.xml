@@ -80,7 +80,7 @@
         
          <!--Join User Page -->
         <definition name="joinPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/join_user/join_user.jsp"/>
+           <put-attribute name="content" value="/WEB-INF/views/signup/joinuser.jsp"/>
         </definition>
         
         
