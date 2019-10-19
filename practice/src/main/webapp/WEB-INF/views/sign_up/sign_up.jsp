@@ -47,6 +47,7 @@
 		
 		<input type="submit" value="JOIN" />
 	
+	
 	</form>
 	
 </div>
