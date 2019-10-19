@@ -22,12 +22,12 @@
         <h3 class="text-muted">School Administration System</h3> 
         <div>
         	<ul class="LoginArea">
-        		<li class="LoginArea__list"><a href="/sginin/sginPage">Login</a></li>
-        		<li class="LoginArea__list"><a href="/signup/signupPage">Sign Up</a></li>
+        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signin/signinPage">Login</a></li>
+        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signup/signupPage">Sign Up</a></li>
         	</ul>
         
 	        <!-- <h4 style="margin-left: 85%;"><a href="#">Login</a></h4>
-	        <h4 style="margin-left: 90%;"><a href="#">Sign Up</a></h4> -->
+	        <h4 style="margRin-left: 90%;"><a href="#">Sign Up</a></h4> -->
         </div>
         <nav>
           <ul class="nav nav-justified">

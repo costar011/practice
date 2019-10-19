@@ -83,6 +83,11 @@
            <put-attribute name="content" value="/WEB-INF/views/signup/joinuser.jsp"/>
         </definition>
         
+         <!--Login User Page -->
+        <definition name="signinPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
+        </definition>
+        
         
       
 </tiles-definitions>
