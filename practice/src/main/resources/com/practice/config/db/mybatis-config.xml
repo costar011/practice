@@ -5,8 +5,10 @@
 <configuration>
 	  <typeAliases>
 		   	<typeAlias  alias="testVO" type="com.practice.test.TestVO"/>
+		   	<typeAlias  alias="memberVO" type="com.practice.model.MemberVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/member.xml"/>
 	  </mappers> 
 </configuration>
