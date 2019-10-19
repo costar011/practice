@@ -23,7 +23,7 @@
         <div>
         	<ul class="LoginArea">
         		<li class="LoginArea__list"><a href="/sginin/sginPage">Login</a></li>
-        		<li class="LoginArea__list"><a href="https://www.google.com">Sign Up</a></li>
+        		<li class="LoginArea__list"><a href="/signup/signupPage">Sign Up</a></li>
         	</ul>
         
 	        <!-- <h4 style="margin-left: 85%;"><a href="#">Login</a></h4>
@@ -33,13 +33,14 @@
           <ul class="nav nav-justified">
             <li><a href="${pageContext.request.contextPath }/main/mainPage">Home Page</a></li>
             <li><a href="${pageContext.request.contextPath }/student/sudentPage">Student Information</a></li>
-            <li><a href="${pageContext.request.contextPath }/">Teacher Information</a></li>
+            <li><a href="${pageContext.request.contextPath }/teacher/teacherPage">Teacher Information</a></li>
             <li><a href="${pageContext.request.contextPath }/payment/paymentPage">Payment Management</a></li>
             <li><a href="${pageContext.request.contextPath }/events/schoolPage">School Events</a></li>
             <li><a href="${pageContext.request.contextPath }/community/communityPage">Community Place</a></li>
-            <li><a href="${pageContext.request.contextPath }/">Student Activities</a></li>
+            <li><a href="${pageContext.request.contextPath }/student/studentPage">Student Activities</a></li>
             <li><a href="${pageContext.request.contextPath }/school/schoolPage">School Document</a></li>
-            <li><a href="${pageContext.request.contextPath }/">Work Schedule</a></li>
+            <li><a href="${pageContext.request.contextPath }/work/workPage">Work Schedule</a></li>
+            
             
             
           </ul>

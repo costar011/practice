@@ -57,13 +57,31 @@
         
         
         
-          <!--Login Page -->
-        <definition name="" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/.jsp"/>
+          <!--Sign Up Page -->
+        <definition name="signupPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/sign_up/sign_up.jsp"/>
         </definition>
         
         
+           <!-- Teacher Information Page -->
+        <definition name="teacherPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/teacher_information/teacher_information.jsp"/>
+        </definition>
         
+         <!-- Student Activities Page -->
+        <definition name="studentactivitiesPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/student_activities/student_activities.jsp"/>
+        </definition>
+        
+         <!--Work Schedule Page -->
+        <definition name="workPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/work_schedule/work_schedule.jsp"/>
+        </definition>
+        
+         <!--Join User Page -->
+        <definition name="joinPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/join_user/join_user.jsp"/>
+        </definition>
         
         
       
