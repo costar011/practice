@@ -22,8 +22,16 @@
         <h3 class="text-muted">School Administration System</h3> 
         <div>
         	<ul class="LoginArea">
-        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signin/signinPage">Login</a></li>
-        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signup/signupPage">Sign Up</a></li>
+        		<c:if test="${!empty login_id}">
+        			<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signin/signinPage">MyPAGE</a></li>
+        			<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signup/signupPage">LOGOUT</a></li>
+        			<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/member/myPage">${login_id }님 환영합니다.</a></li>
+        		</c:if>
+        		
+        		<c:if test="${empty login_id }">
+	        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signin/signinPage">Login</a></li>
+	        		<li class="LoginArea__list"><a href="${pageContext.request.contextPath }/signup/signupPage">Sign Up</a></li>
+        		</c:if>
         	</ul>
         
 	        <!-- <h4 style="margin-left: 85%;"><a href="#">Login</a></h4>
@@ -40,6 +48,7 @@
             <li><a href="${pageContext.request.contextPath }/student/studentPage">Student Activities</a></li>
             <li><a href="${pageContext.request.contextPath }/school/schoolPage">School Document</a></li>
             <li><a href="${pageContext.request.contextPath }/work/workPage">Work Schedule</a></li>
+    
             
             
             

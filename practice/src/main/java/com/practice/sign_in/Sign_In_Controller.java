@@ -3,6 +3,7 @@ package com.practice.sign_in;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +28,8 @@ public class Sign_In_Controller {
 
 	@RequestMapping("/loginUser")
 	public String LoginUser(  @RequestParam("inputId")String id
-							 ,@RequestParam("inputPassword")String password) {
+							 ,@RequestParam("inputPassword")String password
+							 ,HttpSession session) {
 		
 		
 		MemberVO vo = new MemberVO();
@@ -36,11 +38,18 @@ public class Sign_In_Controller {
 		
 		List<MemberVO> list = sService.signIn_serivce(vo);
 		
-		if(list.size() > 0 ) {
-			// login OK
-			System.out.println("login");
-			System.out.println("login");
-			System.out.println("login");
+		if(list.size() > 0 ) { 
+			session.setAttribute("login_id", list.get(0).getId());
+			session.setAttribute("login_password", list.get(0).getName());
+			session.setAttribute("login_name", list.get(0).getEmail());
+			session.setAttribute("login_hp", list.get(0).getEmail());
+			session.setAttribute("login_zip_code", list.get(0).getEmail());
+			session.setAttribute("login_address", list.get(0).getEmail());
+			session.setAttribute("login_address2", list.get(0).getEmail());
+			session.setAttribute("login_email", list.get(0).getEmail());
+			session.setAttribute("login_moblie", list.get(0).getEmail());
+			session.setAttribute("login_sex", list.get(0).getEmail());
+			
 		} else {
 			// login Failed
 			System.out.println("login X");
