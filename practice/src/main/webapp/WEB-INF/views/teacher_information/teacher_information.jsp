@@ -10,7 +10,7 @@
 		<!-- Standard button -->
 		<button type="button" class="btn btn-default">Teacher</button>
 		<button type="button" class="btn btn-default">AdministrativeStaff</button>
-		<button type="button" class="btn btn-default">Cafeteria</button>
+		<button type="button" class="btn btn-default" id="cafeBtn">Cafeteria</button>
 		<button type="button" class="btn btn-default">OtherStaff</button>
 	</div>
 	<div class="">
@@ -51,3 +51,21 @@
 </div>
 <!-- row END -->
 
+<script>
+
+	const cafe = document.getElementById("cafeBtn");
+
+	function moveCafe(){
+		
+		location.href="/cafeteria/cafeteriaPage";
+		
+
+	}
+	
+	
+	cafe.addEventListener("click", moveCafe)
+	
+	
+
+
+</script>

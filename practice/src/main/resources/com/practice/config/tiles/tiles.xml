@@ -88,6 +88,11 @@
            <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
         </definition>
         
+        <!--cafeteria_information Page -->
+        <definition name="cafeteriaPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/cafeteria_information/cafeteria_information.jsp"/>
+        </definition>
+        
         
       
 </tiles-definitions>
