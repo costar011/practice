@@ -9,6 +9,7 @@
 </div>
 <div class="col-md-7">
 	<table class="table">
+		
 		<thead>
 			<tr>
 				<th width="30%"><input type="checkbox" /></th>

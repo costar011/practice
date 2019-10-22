@@ -6,10 +6,12 @@
 	  <typeAliases>
 		   	<typeAlias  alias="testVO" type="com.practice.test.TestVO"/>
 		   	<typeAlias  alias="memberVO" type="com.practice.model.MemberVO"/>
+		   	<typeAlias  alias="teacherVO" type="com.practice.model.TeacherVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/member.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/login.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/teacher.xml"/>
 	  </mappers> 
 </configuration>

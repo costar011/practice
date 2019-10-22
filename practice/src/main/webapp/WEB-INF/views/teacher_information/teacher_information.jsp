@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!--   col divide -->
 <div class="row">
@@ -17,14 +17,37 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th width="5%"><input type="checkbox" /></th>
-					<th width="10%"></th>
-					<th width="10%"></th>
-					<th width="20%"></th>
-					<th width="20%"></th>
+					<th>NO</th>
+					<th>NAME</th>
+					<th>MOBILE</th>
+					<th>SEX</th>
+					<th>JOB</th>
+					
+					<th>MGR</th>
+					<th>ADDRESS</th>
+					<th>EMAIL</th>
+					<th>SAL</th>
 				</tr>
 			</thead>
+			
+			<tbody>
+				<c:forEach items="${teacherList }" var="teacher">
+				<tr>
+					<td>${teacher.uid }</td>
+					<td>${teacher.name }</td>
+					<td>${teacher.mobile }</td>
+					<td>${teacher.sex }</td>
+					<td>${teacher.job }</td>
+					
+					<td>${teacher.mgr }</td>
+					<td>${teacher.address }</td>
+					<td>${teacher.email }</td>
+					<td>${teacher.sal }</td>
+				<tr>
+				</c:forEach>
+			</tbody>
 		</table>
 	</div>
 </div>
 <!-- row END -->
+
