@@ -4,8 +4,8 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-  <mapper namespace="administration">
-	<select id="admin" resultType="adminstrationVO">
+  <mapper namespace="otherstaff">
+	<select id="other" resultType="otherstaffVO">
 			SELECT	UID
 					,NAME
 					,MOBILE
@@ -15,9 +15,12 @@
 					, ADDRESS
 					, EMAIL
 					, SAL
-			  FROM	 ADMINISTRATION
+			  FROM OTHERSTAFF
 	</select>
 
 
 </mapper>
+
+
+
 

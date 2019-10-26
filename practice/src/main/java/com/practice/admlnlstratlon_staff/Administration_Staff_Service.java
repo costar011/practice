@@ -14,7 +14,7 @@ public class Administration_Staff_Service {
 	@Resource(name = "admlnlstratlon_staff_Dao")
 	private Administration_Staff_Dao aDao;
 	
-	public List<AdministrationVO> selectAllAdmin(){
+	public List<AdministrationVO> selectAllAdmin() {
 		
 		List<AdministrationVO> list = aDao.selectAllAdmin();
 		

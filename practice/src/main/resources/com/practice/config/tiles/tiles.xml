@@ -99,5 +99,15 @@
            <put-attribute name="content" value="/WEB-INF/views/cafeteria_information/cafeteria_information.jsp"/>
         </definition>
         
+        
+        <!-- Other Staff Page -->
+        <definition name="otherPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/other_staff/other_staff.jsp"/>
+        </definition>
+        
+        
+        
+        
       
 </tiles-definitions>
+

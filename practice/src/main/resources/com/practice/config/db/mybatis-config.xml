@@ -2,6 +2,8 @@
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+  
 <configuration>
 	  <typeAliases>
 		   	<typeAlias  alias="testVO" type="com.practice.test.TestVO"/>
@@ -9,6 +11,7 @@
 		   	<typeAlias  alias="teacherVO" type="com.practice.model.TeacherVO"/>
 		   	<typeAlias  alias="adminstrationVO" type="com.practice.model.AdministrationVO"/>
 		   	<typeAlias  alias="cafeteriaVO" type="com.practice.model.CafeteriaVO"/>
+		   	<typeAlias  alias="otherStaffVO" type="com.practice.model.OtherStaffVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
@@ -17,5 +20,10 @@
 	  		<mapper resource="com/practice/config/db/mapper/teacher.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/administration.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/cafeteria.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/otherstaff.xml"/>
+	  		
+	  		
 	  </mappers> 
+	  
 </configuration>
+

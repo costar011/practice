@@ -20,6 +20,8 @@ public class Administration_Staff_Dao {
 		List<AdministrationVO> list = sqlSessionTemplate.selectList("administration.admin");
 		
 		return list;
+		
+		
 	}
 
 }
