@@ -1,17 +1,15 @@
 package com.practice.model;
 
-public class AdministrationVO {
-	
-	private String uid		  ;
-	private String name       ;
-	private String mobile     ;
-	private String sex        ;
-	private String job        ;
-	private String mgr        ;
-	private String address    ;
-	private String email      ;
-	private String sal        ;
-	
+public class CafeteriaVO {
+
+	private String uid     ;
+	private String name    ;
+	private String mobile  ;
+	private String sex     ;
+	private String job     ;
+	private String mgr     ;
+	private String address ;
+	private String email   ;
 	
 	public String getUid() {
 		return uid;
@@ -67,10 +65,8 @@ public class AdministrationVO {
 	public void setSal(String sal) {
 		this.sal = sal;
 	}
+	private String sal     ;
 	
 	
 	
-	
-	
-       
 }

@@ -8,9 +8,9 @@
 		<h2>Teacher</h2>
 
 		<!-- Standard button -->
-		<button type="button" class="btn btn-default">Teacher</button>
-		<button type="button" class="btn btn-default">AdministrativeStaff</button>
-		<button type="button" class="btn btn-default">Cafeteria</button>
+		<button type="button" class="btn btn-default" id="teachBtn">Teacher</button>
+		<button type="button" class="btn btn-default" id="adminBtn">AdministrativeStaff</button>
+		<button type="button" class="btn btn-default" id="cafeBtn">Cafeteria</button>
 		<button type="button" class="btn btn-default">OtherStaff</button>
 	</div>
 	<div class="">
@@ -50,4 +50,30 @@
 	</div>
 </div>
 <!-- row END -->
+  <script>
 
+	const cafe = document.getElementById("cafeBtn");
+	const admin = document.getElementById("adminBtn");
+	const teacher = document.getElementById("teachBtn");
+	
+	function moveTeacher(){
+		location.href="/teacher/teacherPage";
+	}
+	
+	function moveAdmin(){
+		location.href="/administration_staff/administrationPage";
+	}
+
+	function moveCafe(){
+		location.href="/cafeteria/cafeteriaPage";
+	}
+	
+	
+	cafe.addEventListener("click", moveCafe);
+	admin.addEventListener("click", moveAdmin);
+	teacher.addEventListener("click", moveTeacher);
+	
+	
+
+
+</script>
