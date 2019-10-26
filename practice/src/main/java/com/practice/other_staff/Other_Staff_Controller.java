@@ -28,7 +28,6 @@ public class Other_Staff_Controller {
 		model.addAttribute("otherList", list);
 		
 		return "otherPage";
-				
 		
 	}
 	
