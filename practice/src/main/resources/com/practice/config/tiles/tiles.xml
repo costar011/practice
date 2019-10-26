@@ -88,6 +88,9 @@
            <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
         </definition>
         
-        
+         <!-- Administration Page -->
+        <definition name="AdminPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/administration_staff/administration_staff.jsp"/>
+        </definition>
       
 </tiles-definitions>

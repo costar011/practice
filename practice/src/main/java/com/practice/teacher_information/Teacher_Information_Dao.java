@@ -19,6 +19,7 @@ public class Teacher_Information_Dao {
 		
 		List<TeacherVO> list = sqlSessionTemplate.selectList("teacher.teacherAllList");
 		
+		
 		return list;
 	}
 
