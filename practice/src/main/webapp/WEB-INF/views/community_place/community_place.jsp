@@ -1,7 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 
-    <h1> community test</h1>
-    
-    
-    
+   <div class = row>
+   
+   	<div class = cal-md-2>
+   	
+   	</div>
+   
+    <div class = cal-md-8>
+   	
+   	
+   	
+   	</div>
+   
+    <div class = cal-md-2>
+   	
+   	</div>
+   
+   </div>
