@@ -1,113 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE tiles-definitions PUBLIC
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
-       
+
 
 <tiles-definitions>
-       <definition name="layout" template="/WEB-INF/views/template/layout.jsp">
-           <put-attribute name="header" value="/WEB-INF/views/template/header.jsp"/>
-           <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"/>
-           <put-attribute name="content" value=""/>
-        </definition> 
-        
-        <!-- TEST AREA -->
-        
-        <definition name="helloTiles" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/template/hello.jsp"/>
-        </definition>
-        
-         <!-- Main -->
-        <definition name="main" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/main/mainPage.jsp"/>
-        </definition>
-        
-        <!-- Student Information Page -->
-        <definition name="studentPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/student_information/student_information.jsp"/>
-        </definition>
-        
-        <!-- community Place Page -->
-         <definition name="communityPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/community_place/community_place.jsp"/>
-        </definition>
-        
-        <!-- Payment Management Page -->
-        <definition name="paymentPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/payment_management/payment_management.jsp"/>
-        </definition>
-        
-        
-         <!--School Document Page  -->
-        <definition name="schooldocumentPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/school_document/school_document.jsp"/>
-        </definition>
-        
-        
-         <!-- School Events Page -->
-        <definition name="schooleventsPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/school_events/school_events.jsp"/>
-        </definition>
-        
-        
-        
-          <!--Sign In Page -->
-        <definition name="sgininPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
-        </definition>
-        
-        
-        
-          <!--Sign Up Page -->
-        <definition name="signupPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/sign_up/sign_up.jsp"/>
-        </definition>
-        
-        
-           <!-- Teacher Information Page -->
-        <definition name="teacherPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/teacher_information/teacher_information.jsp"/>
-        </definition>
-        
-         <!-- Student Activities Page -->
-        <definition name="studentactivitiesPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/student_activities/student_activities.jsp"/>
-        </definition>
-        
-         <!--Work Schedule Page -->
-        <definition name="workPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/work_schedule/work_schedule.jsp"/>
-        </definition>
-        
-         <!--Join User Page -->
-        <definition name="joinPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/signup/joinuser.jsp"/>
-        </definition>
-        
-         <!--Login User Page -->
-        <definition name="signinPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/sign_in/sign_in.jsp"/>
-        </definition>
-        
+	<definition name="layout"
+		template="/WEB-INF/views/template/layout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/template/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/template/footer.jsp" />
+		<put-attribute name="content" value="" />
+	</definition>
 
-         <!-- Administration Page -->
-        <definition name="AdminPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/administration_staff/administration_staff.jsp"/>
-        </definition>
+	<!-- TEST AREA -->
 
-        <!--cafeteria_information Page -->
-        <definition name="cafeteriaPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/cafeteria_information/cafeteria_information.jsp"/>
-        </definition>
-        
-        
-        <!-- Other Staff Page -->
-        <definition name="otherPage" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/other_staff/other_staff.jsp"/>
-        </definition>
-        
-        
-        
-        
-      
+	<definition name="helloTiles" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/template/hello.jsp" />
+	</definition>
+
+	<!-- Main -->
+	<definition name="main" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/main/mainPage.jsp" />
+	</definition>
+
+	<!-- Student Information Page -->
+	<definition name="studentPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/student_information/student_information.jsp" />
+	</definition>
+
+	<!-- community Place Page -->
+	<definition name="communityPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/community_place/community_place.jsp" />
+	</definition>
+
+	<!-- Payment Management Page -->
+	<definition name="paymentPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/payment_management/payment_management.jsp" />
+	</definition>
+
+
+	<!--School Document Page -->
+	<definition name="schooldocumentPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/school_document/school_document.jsp" />
+	</definition>
+
+
+	<!-- School Events Page -->
+	<definition name="schooleventsPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/school_events/school_events.jsp" />
+	</definition>
+
+
+
+	<!--Sign In Page -->
+	<definition name="sgininPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/sign_in/sign_in.jsp" />
+	</definition>
+
+
+
+	<!--Sign Up Page -->
+	<definition name="signupPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/sign_up/sign_up.jsp" />
+	</definition>
+
+
+	<!-- Teacher Information Page -->
+	<definition name="teacherPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/teacher_information/teacher_information.jsp" />
+	</definition>
+
+	<!-- Student Activities Page -->
+	<definition name="studentactivitiesPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/student_activities/student_activities.jsp" />
+	</definition>
+
+	<!--Work Schedule Page -->
+	<definition name="workPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/work_schedule/work_schedule.jsp" />
+	</definition>
+
+	<!--Join User Page -->
+	<definition name="joinPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/signup/joinuser.jsp" />
+	</definition>
+
+	<!--Login User Page -->
+	<definition name="signinPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/sign_in/sign_in.jsp" />
+	</definition>
+
+
+	<!-- Administration Page -->
+	<definition name="AdminPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/administration_staff/administration_staff.jsp" />
+	</definition>
+
+	<!--cafeteria_information Page -->
+	<definition name="cafeteriaPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/cafeteria_information/cafeteria_information.jsp" />
+	</definition>
+
+
+	<!-- Other Staff Page -->
+	<definition name="otherPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/other_staff/other_staff.jsp" />
+	</definition>
+
+
+	<!-- Payment_Management Page -->
+	<definition name="paymentPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/payment_management/payment_management.jsp" />
+	</definition>
+
+
+
 </tiles-definitions>
 

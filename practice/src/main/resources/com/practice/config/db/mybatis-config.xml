@@ -12,7 +12,11 @@
 		   	<typeAlias  alias="adminstrationVO" type="com.practice.model.AdministrationVO"/>
 		   	<typeAlias  alias="cafeteriaVO" type="com.practice.model.CafeteriaVO"/>
 		   	<typeAlias  alias="otherStaffVO" type="com.practice.model.OtherStaffVO"/>
+		   	<typeAlias  alias="Payment_ManagementVO" type="com.practice.model.Payment_ManagementVO"/>
+		   	
 	  </typeAliases>
+	  
+	  
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/member.xml"/>
@@ -21,9 +25,10 @@
 	  		<mapper resource="com/practice/config/db/mapper/administration.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/cafeteria.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/otherstaff.xml"/>
-	  		
+	  		<mapper resource="com/practice/config/db/mapper/payment.xml"/>
 	  		
 	  </mappers> 
+	  
 	  
 </configuration>
 

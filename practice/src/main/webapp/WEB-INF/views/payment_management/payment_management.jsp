@@ -67,7 +67,6 @@
 					<td width="200px"></td>
 					<td width="200px">105만원</td>
 					<td width="200px"></td>
-					
 				</tr>
 				
 				
@@ -78,5 +77,8 @@
 		<button type="button" class="btn btn-danger">거부</button>
 
 	</div>
+	
+	
+	
 </div>
 <!-- row END -->
