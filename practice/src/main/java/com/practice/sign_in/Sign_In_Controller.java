@@ -61,9 +61,25 @@ public class Sign_In_Controller {
 	
 		
 	}
-
+	
+	public String logout(HttpSession session) {
+		
+		session.removeAttribute("login_id");
+		session.removeAttribute("login_password");
+		session.removeAttribute("login_name");
+		session.removeAttribute("login_hp");
+		session.removeAttribute("login_zip_code");
+		session.removeAttribute("login_address");
+		session.removeAttribute("login_address2");
+		session.removeAttribute("login_email");
+		session.removeAttribute("login_moblie");
+		session.removeAttribute("login_sex");
+		
+		
+		
+		return "mainPage";
+		
+	}
 	
 	
-
-
 }
