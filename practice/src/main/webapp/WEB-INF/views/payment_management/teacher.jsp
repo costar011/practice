@@ -34,11 +34,11 @@
 					<td><input type="checkbox" /></td>
 					<td width="200px">1</td>
 					<td width="200px"></td>
-					<td width="200px">수련회</td>
+					<td width="200px">학급 모임 비용</td>
 					<td width="200px"></td>
 					<td width="200px">교장</td>
 					<td width="200px"></td>
-					<td width="200px">100만원</td>
+					<td width="200px">10만원</td>
 					<td width="200px"></td>
 
 				</tr>
@@ -47,11 +47,11 @@
 					<td><input type="checkbox" /></td>
 					<td width="200px">2</td>
 					<td width="200px"></td>
-					<td width="200px">수학여행</td>
+					<td width="200px">품위 유지비</td>
 					<td width="200px"></td>
 					<td width="200px">교장</td>
 					<td width="200px"></td>
-					<td width="200px">120만원</td>
+					<td width="200px">15만원</td>
 					<td width="200px"></td>
 				</tr>
 
@@ -59,22 +59,25 @@
 					<td><input type="checkbox" /></td>
 					<td width="200px">3</td>
 					<td width="200px"></td>
-					<td width="200px">대학교 강의</td>
+					<td width="200px">차감 유지비</td>
 					<td width="200px"></td>
 					<td width="200px">교장</td>
 					<td width="200px"></td>
-					<td width="200px">105만원</td>
+					<td width="200px">150만원</td>
 					<td width="200px"></td>
 				</tr>
-			<tbody>
+				
+					<tbody>
 				<c:forEach items="${paymentList }" var="payment">
 					<tr>
+						<td>${payment.uid }</td>
 						<td>${payment.name }</td>
 						<td>${payment.mgr }</td>
 						<td>${payment.money }</td>
 				</c:forEach>
 			</tbody>
-
+				
+				
 		</table>
 
 		<div class="col-md-2"></div>
@@ -82,6 +85,8 @@
 		<button type="button" class="btn btn-danger">거부</button>
 
 	</div>
+
+
 
 </div>
 <!-- row END -->
