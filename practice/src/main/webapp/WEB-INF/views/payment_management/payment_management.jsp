@@ -87,11 +87,23 @@
 <!-- row END -->
 
 <script>
-	cosnt school = document.getSCHOOLId("schoolBtn");
+	const school = document.getElementById("schoolBtn");
+	const teacher = document.getElementById("teacherBtn");
+	const student = document.getElementById("studentBtn");
 
 	function moveSchool() {
-		location.href = "/payment_management/payment_management_schoolPage";
+		location.href = "/payment/paymentPage";
+	}
+
+	function moveTeacher() {
+		location.href = "/payment/teacherPage";
+	}
+
+	function moveStudent() {
+		location.href = "/payment/studentPage";
 	}
 
 	school.addEventListener("click", moveSchool);
+	student.addEventListener("click", moveStudent);
+	teacher.addEventListener("click", moveTeacher);
 </script>

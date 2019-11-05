@@ -132,9 +132,20 @@
 			value="/WEB-INF/views/payment_management/payment_management.jsp" />
 	</definition>
 
+	
+	
+	<!-- Payment_Management_Student Page -->
+	<definition name="student2Page" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/payment_management/student.jsp" />
+	</definition>
 
-
-
+	
+	<!-- Payment_Management_Teacher Page -->
+	<definition name="teacherPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/payment_management/teacher.jsp" />
+	</definition>
 
 </tiles-definitions>
 

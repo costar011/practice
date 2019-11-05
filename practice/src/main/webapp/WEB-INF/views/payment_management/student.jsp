@@ -66,8 +66,7 @@
 					<td width="200px">300만원</td>
 					<td width="200px"></td>
 				</tr>
-				
-					<tbody>
+			<tbody>
 				<c:forEach items="${paymentList }" var="payment">
 					<tr>
 						<td>${payment.name }</td>
@@ -75,8 +74,8 @@
 						<td>${payment.money }</td>
 				</c:forEach>
 			</tbody>
-				
-				
+
+
 		</table>
 
 		<div class="col-md-2"></div>
@@ -91,12 +90,26 @@
 <!-- row END -->
 
 <script>
-	cosnt school = document.getSCHOOLId("schoolBtn");
+	const school = document.getElementById("schoolBtn");
+	const teacher = document.getElementById("teacherBtn");
+	const student = document.getElementById("studentBtn");
 
 	function moveSchool() {
-		location.href = "/payment_management/payment_management_schoolPage";
+		location.href = "/payment/paymentPage";
 	}
 
+	function moveTeacher() {
+		location.href = "/payment/teacherPage";
+	}
+
+	function moveStudent() {
+		location.href = "/payment/studentPage";
+	}
+
+	
 	school.addEventListener("click", moveSchool);
+	student.addEventListener("click", moveStudent);
+	teacher.addEventListener("click", moveTeacher);
+	
 </script>
 

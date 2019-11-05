@@ -3,7 +3,8 @@
 
 <!--   col divide -->
 <div class="row">
-	<div class="col-md-5">
+
+	<div class="col-md-6">
 
 		
 		<!-- img로 이미지 넣기 -->
@@ -17,16 +18,11 @@
 		<p></p>
 
 	</div>
-	<!-- md-5 END -->
+	<!-- md-6 END -->
 
 
-	<div class="col-md-1">
-		<p></p>
-	</div>
-	<!-- md-2 END -->
 
-
-	<div class="col-md-5">
+	<div class="col-md-6">
 		
 		<h2>
 			<img alt="poto"
@@ -38,10 +34,9 @@
 		<p></p>
 
 	</div>
-	<!-- md-5 EMD -->
+	<!-- md-6 EMD -->
 
 </div>
 <!-- row END -->
-
 
 
