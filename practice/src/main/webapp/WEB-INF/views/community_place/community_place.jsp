@@ -27,8 +27,8 @@
    	<tr>
    		<td>${comm.uid }</td>
    		<td>${comm.title }</td>
-   		<td>${comm.written }</td>
-  	 	<td>${comm.member_uid }</td>
+   		<td>${comm.name }</td>
+  	 	<td>${comm.written }</td>
    	</tr>
    	
    	</c:forEach>

@@ -7,8 +7,15 @@ public class CommunityplaceVO {
 	private String con     		;
 	private String written      ;
 	private String member_uid   ;
+	private String name			;
 	
 	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getUid() {
 		return uid;
 	}
