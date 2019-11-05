@@ -14,18 +14,26 @@ public class MemberVO {
 	PASSWORD
 	EMAIL
 	*/
-	private String name       ;
-	private String mobile     ;
-	private String hp         ;
-	private String zip_code   ;
-	private String address    ;
-	private String address2   ;
-	private String sex        ;
-	private String id         ;
-	private String password   ;
-	private String email      ;
+	
+	private String member_uid       ;
+	private String name      	    ;
+	private String mobile           ;
+	private String hp        	    ;
+	private String zip_code   	    ;
+	private String address    		;
+	private String address2  	    ;
+	private String sex        		;
+	private String id         		;
+	private String password   		;
+	private String email      		;
 	
 	
+	public String getMember_uid() {
+		return member_uid;
+	}
+	public void setMember_uid(String member_uid) {
+		this.member_uid = member_uid;
+	}
 	public String getName() {
 		return name;
 	}
@@ -87,7 +95,4 @@ public class MemberVO {
 		this.email = email;
 	}
 	
-	
-	
-
 }
