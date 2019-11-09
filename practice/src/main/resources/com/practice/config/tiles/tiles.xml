@@ -142,11 +142,7 @@
 	</definition>
 
 
-	<!-- Payment_Management_Teacher Page -->
-	<definition name="teacherPage" extends="layout">
-		<put-attribute name="content"
-			value="/WEB-INF/views/payment_management/teacher.jsp" />
-	</definition>
+	
 
 
 
