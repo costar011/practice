@@ -146,6 +146,10 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/teacher.jsp" />
 	</definition>
+	
+	
+	
+	
 
 </tiles-definitions>
 

@@ -3,8 +3,7 @@
 
 <!--   col divide -->
 <div class="row">
-	<div class="col-md-10">
-		<h2>Student</h2>
+	<div class="col-md-10" style="margin-top: 50px;">
 
 		<table class="table table-hover">
 
@@ -77,4 +76,7 @@
 			</div>
 		</div>
 	</div>
-</div> <!-- row END -->
+</div>
+<!-- row END -->
+
+

@@ -5,14 +5,14 @@
 <style>
 .LoginArea {
 	display: flex;
-	margin-left: 70%;
+	margin-left: 80%;
 	list-style-type: none;
 	font-size: 14px;
 	justify-self: 10%;
 }
 
 .LoginArea__list {
-	margin-left: 20px;
+	margin-left: 40px;
 }
 </style>
 
@@ -70,9 +70,6 @@
 						Document</a></li>
 				<li><a href="${pageContext.request.contextPath }/work/workPage">Work
 						Schedule</a></li>
-
-
-
 
 			</ul>
 		</nav>

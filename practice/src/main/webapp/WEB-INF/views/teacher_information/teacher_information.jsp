@@ -4,7 +4,8 @@
 
 <!--   col divide -->
 <div class="row" style="margin-top: 50px;">
-	<div class="col-md-8">
+
+	<div class="col-md-9">
 
 		<!-- Standard button -->
 		<button type="button" class="btn btn-default" id="teachBtn">Teacher</button>
@@ -12,7 +13,8 @@
 		<button type="button" class="btn btn-default" id="cafeBtn">Cafeteria</button>
 		<button type="button" class="btn btn-default" id="otherBtn">OtherStaff</button>
 	</div>
-	<div class="">
+	
+	<div class="col-md-3">
 		<table class="table">
 			<thead>
 				<tr>
