@@ -4,7 +4,7 @@
 <!--   col divide -->
 <div class="row">
 
-	<div class="col-md-1"></div>
+	<div class="col-md-2"></div>
 
 	<div class="col-md-5">
 		<!-- img로 이미지 넣기 -->
@@ -31,7 +31,6 @@
 	<br /> <br />
 
 
-	<div class="col-md-1"></div>
 	
 	
 </div>
