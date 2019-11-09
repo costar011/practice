@@ -32,6 +32,12 @@
 			value="/WEB-INF/views/student_information/student_information.jsp" />
 	</definition>
 
+	<!-- Teacher Information Page -->
+	<definition name="teacherPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/teacher_information/teacher_information.jsp" />
+	</definition>
+
 	<!-- community Place Page -->
 	<definition name="communityPage" extends="layout">
 		<put-attribute name="content"
@@ -58,22 +64,17 @@
 			value="/WEB-INF/views/school_events/school_events.jsp" />
 	</definition>
 
-
-
 	<!--Sign In Page -->
 	<definition name="sgininPage" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/sign_in/sign_in.jsp" />
 	</definition>
 
-
-
 	<!--Sign Up Page -->
 	<definition name="signupPage" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/sign_up/sign_up.jsp" />
 	</definition>
-
 
 	<!-- Teacher Information Page -->
 	<definition name="teacherPage" extends="layout">
@@ -132,24 +133,24 @@
 			value="/WEB-INF/views/payment_management/payment_management.jsp" />
 	</definition>
 
-	
-	
+
+
 	<!-- Payment_Management_Student Page -->
 	<definition name="student2Page" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/student.jsp" />
 	</definition>
 
-	
+
 	<!-- Payment_Management_Teacher Page -->
 	<definition name="teacherPage" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/teacher.jsp" />
 	</definition>
-	
-	
-	
-	
+
+
+
+
 
 </tiles-definitions>
 
