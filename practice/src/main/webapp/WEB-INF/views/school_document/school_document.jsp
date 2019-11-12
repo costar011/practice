@@ -20,7 +20,64 @@
 					<th width="10%">
 				</tr>
 			</thead>
+
+
+			<tbody>
+				<tr>
+					<td width="200px"></td>
+					<td width="200px">9월 월말공지사항</td>
+					<td width="200px"></td>
+					<td width="200px">교장</td>
+					<td width="200px"></td>
+					<td width="200px"></td>
+
+				</tr>
+
+				<tr>
+					<td width="200px"></td>
+					<td width="200px">10월 월말공지사항</td>
+					<td width="200px"></td>
+					<td width="200px">교장</td>
+					<td width="200px"></td>
+					<td width="200px"></td>
+
+				</tr>
+
+				<tr>
+					<td width="200px"></td>
+					<td width="200px">10월 행사공지사항</td>
+					<td width="200px"></td>
+					<td width="200px">3학년부장</td>
+					<td width="200px"></td>
+					<td width="200px"></td>
+
+				</tr>
+
+				<tr>
+					<td width="200px"></td>
+					<td width="200px">학교생활기록부</td>
+					<td width="200px"></td>
+					<td width="200px">1학년부장</td>
+					<td width="200px"></td>
+					<td width="200px"></td>
+
+				</tr>
+
+
+				<tr>
+					<td width="200px"></td>
+					<td width="200px">성적증명서</td>
+					<td width="200px"></td>
+					<td width="200px">1학년부장</td>
+					<td width="200px"></td>
+					<td width="200px"></td>
+
+				</tr>
+
+			</tbody>
+
 		</table>
+
 	</div>
 	<div class="col-md-2"></div>
 </div>
@@ -29,10 +86,10 @@
 	<div class="col-md-10"></div>
 
 	<div class="col-md-2">
-		<button type="button" class="btn btn-info">등록</button>
+	
+		<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
 		<button type="button" class="btn btn-danger">삭제</button>
 
 	</div>
 </div>
-
 <!-- row END -->
