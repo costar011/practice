@@ -12,15 +12,22 @@
 
 			<thead>
 				<tr>
-					<th width="10%">
-					<th width="30%"></th>
-					<th width="30%"></th>
-					<th width="30%"></th>
-					<th width="30%"></th>
-					<th width="10%">
+					<th>NO</th>
+					<th>TITLE</th>
+					<th>WRITTIN</th>
 				</tr>
 			</thead>
+			<tbody>
+				<c:forEach items="" var="event">
+					<tr>
+					
+					
+					
+					
+					<tr>
+				</c:forEach>
 
+			</tbody>
 
 
 		</table>
@@ -60,14 +67,13 @@
 
 	console.log(but);
 	console.log(butt);
-	 	
-	if(confirm("등록하시겠습니까?"))	{
+
+	if (confirm("등록하시겠습니까?")) {
 		// 확인 버튼 클릭 시 동작
 		alert("등록 완료.");
-	} else 
+	} else
 		// 취소 버튼 클릭시
 		alert("등록 취소");
-	
 </script>
 
 
