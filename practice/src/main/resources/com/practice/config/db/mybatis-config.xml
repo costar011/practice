@@ -14,7 +14,7 @@
 		   	<typeAlias  alias="otherStaffVO" type="com.practice.model.OtherStaffVO"/>
 		   	<typeAlias  alias="Payment_ManagementVO" type="com.practice.model.Payment_ManagementVO"/>
 		   	<typeAlias  alias="commVO" type="com.practice.model.CommunityplaceVO"/>
-		   	
+		   	<typeAlias  alias="SchoolEventVO" type="com.practice.model.SchoolEventVO"/>
 	  </typeAliases>
 	  
 	  
@@ -28,7 +28,7 @@
 	  		<mapper resource="com/practice/config/db/mapper/otherstaff.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/payment.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/communtiy.xml"/>
-	  		
+	  		<mapper resource="com/practice/config/db/mapper/schoolevent.xml"/>
 	  </mappers> 
 	  
 	  

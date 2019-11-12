@@ -26,6 +26,6 @@ public class SchoolEventVO {
 		this.writtin = writtin;
 	}
 	
-	
+		
 
 }

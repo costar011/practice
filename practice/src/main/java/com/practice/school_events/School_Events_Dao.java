@@ -12,9 +12,16 @@ import com.practice.model.SchoolEventVO;
 @Repository("school_events_Dao")
 public class School_Events_Dao {
 	
-	@Resource(name = "qlSessionTemplate")
+	@Resource(name = "sqlSessionTemplate")
 	private SqlSessionTemplate sqlSessionTemplate;
 	
+	public List<SchoolEventVO> sleectAllevent() {
+		
+		List<SchoolEventVO> list = sqlSessionTemplate.selectList("event.schoolevent");
+		
+		return list;
+		
+	}
 	
 
 }
