@@ -20,14 +20,12 @@ public class School_Events_Controller {
 	@RequestMapping("/schoolPage")
 	public String schoolevents(Model model) {
 		
-		System.out.println("111111");
+		System.out.println("111111111");
 		
 		List<SchoolEventVO> list = ssService.sleectAllevent();
 		
 		model.addAttribute("eventList", list);
 		
-		
-
 		return "schooleventsPage";
 	}
 }

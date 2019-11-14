@@ -17,6 +17,8 @@ public class School_Events_Dao {
 	
 	public List<SchoolEventVO> sleectAllevent() {
 		
+		System.out.println("2222222");
+		
 		List<SchoolEventVO> list = sqlSessionTemplate.selectList("event.schoolevent");
 		
 		return list;

@@ -16,6 +16,9 @@ public class School_Events_Service {
 
 	public List<SchoolEventVO>  sleectAllevent() {
 		
+		
+		System.out.println("33333333");
+		
 		List<SchoolEventVO> list = ssDao.sleectAllevent();
 		
 		return list;

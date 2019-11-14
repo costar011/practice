@@ -134,16 +134,18 @@
 	</definition>
 
 
-
 	<!-- Payment_Management_Student Page -->
 	<definition name="student2Page" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/student.jsp" />
 	</definition>
 
-
 	
-
+	<!-- School_events Page -->
+	<definition name="schooleventPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/school_events/school_events.jsp" />
+	</definition>
 
 
 

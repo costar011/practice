@@ -130,7 +130,7 @@
 	}
 
 	function moveButtt() {
-		alert("Click This Btn");
+		location.href = "/events/schoolPage";
 	}
 
 	butt.addEventListener("click", moveButt);
