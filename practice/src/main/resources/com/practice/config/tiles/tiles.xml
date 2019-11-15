@@ -4,6 +4,7 @@
 
 
 <tiles-definitions>
+
 	<definition name="layout"
 		template="/WEB-INF/views/template/layout.jsp">
 		<put-attribute name="header"
@@ -139,16 +140,17 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/student.jsp" />
 	</definition>
-
 	
-	<!-- School_events Page -->
-	<definition name="schooleventPage" extends="layout">
+	<!-- INSERT STUDENT -->
+	<definition name="insertPage" extends="layout">
 		<put-attribute name="content"
-			value="/WEB-INF/views/school_events/school_events.jsp" />
+			value="/WEB-INF/views/student_information/student_insert.jsp" />
 	</definition>
 
 
 
 
-</tiles-definitions>
 
+
+
+</tiles-definitions>
