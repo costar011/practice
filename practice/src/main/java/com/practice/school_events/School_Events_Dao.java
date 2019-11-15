@@ -11,19 +11,27 @@ import com.practice.model.SchoolEventVO;
 
 @Repository("school_events_Dao")
 public class School_Events_Dao {
-	
+
 	@Resource(name = "sqlSessionTemplate")
 	private SqlSessionTemplate sqlSessionTemplate;
-	
+
 	public List<SchoolEventVO> sleectAllevent() {
-		
-		System.out.println("2222222");
-		
+
+
 		List<SchoolEventVO> list = sqlSessionTemplate.selectList("event.schoolevent");
-		
+
 		return list;
-		
+
 	}
-	
+
+	public void EventInsert(SchoolEventVO vo) {
+
+		sqlSessionTemplate.insert("event.schoolInsert", vo);
+	}
+
+	public void eventDelet(String uid) {
+
+		sqlSessionTemplate.insert("event.schoolDelete", uid);
+	}
 
 }

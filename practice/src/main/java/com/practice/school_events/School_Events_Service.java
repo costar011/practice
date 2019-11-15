@@ -14,14 +14,21 @@ public class School_Events_Service {
 	@Resource(name = "school_events_Dao")
 	private School_Events_Dao ssDao;
 
-	public List<SchoolEventVO>  sleectAllevent() {
-		
-		
-		System.out.println("33333333");
-		
+	public List<SchoolEventVO> sleectAllevent() {
+
 		List<SchoolEventVO> list = ssDao.sleectAllevent();
-		
+
 		return list;
+	}
+
+	public void insertEvent(SchoolEventVO vo) {
+
+		ssDao.EventInsert(vo);
+	}
+
+	public void eventDelet(String uid) {
+
+		ssDao.eventDelet(uid);
 	}
 
 }

@@ -21,7 +21,6 @@ public class School_Events_Controller {
 	@RequestMapping("/schoolPage")
 	public String schoolevents(Model model) {
 		
-		System.out.println("111111111");
 		
 		List<SchoolEventVO> list = ss.sleectAllevent();
 		
@@ -36,15 +35,31 @@ public class School_Events_Controller {
 							   ,@RequestParam("written")String written) {
 		
 		SchoolEventVO vo = new SchoolEventVO();
+		System.out.println(title);
+		System.out.println(written);
 		
 		vo.setTitle(title);
 		vo.setWrittin(written);
 		
-		ss.sleectAllevent();
+		ss.insertEvent(vo);
 		
-		return "schooleventsPage";
+		
+		return "redirect:schoolPage";
 		
 	}
+	
+	@RequestMapping("/deleteschoolevents")
+	public String deleteschoolevents(@RequestParam("uid")String uid) {
+		
+		System.out.println(uid);
+		
+		ss.eventDelet(uid);
+		
+		return "";
+		
+	}
+	
+	
 	
 	
 }

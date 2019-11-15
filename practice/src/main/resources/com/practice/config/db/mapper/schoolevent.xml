@@ -5,9 +5,33 @@
 <mapper namespace="event">
 
 	<select id="schoolevent" resultType="schooleventVO">
-		SELECT	UID
-				,TITLE
-				,WRITTIN
-		  FROM	SCHOOLEVENT
+		SELECT UID
+		,TITLE
+		,WRITTIN
+		FROM SCHOOLEVENT
 	</select>
+
+
+	<insert id="schoolInsert" parameterType="schooleventVO">
+		INSERT INTO SCHOOLEVENT
+		(
+		TITLE,
+		WRITTIN
+		)
+		VALUES
+		(
+		#{title},
+		#{writtin}
+		)
+
+	</insert>
+
+	<delete id="schooldelet" parameterType="String">
+
+		DELET FROM SCHOOLEVENT
+		WHERE UID = #{uid}
+	</delete>
+
+
 </mapper>
+

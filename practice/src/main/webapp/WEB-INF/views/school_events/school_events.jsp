@@ -18,29 +18,29 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	
+
 <style>
-	.modal-input {
-		border-radius : 20px;
-		width : 400px;
-		outline : none;
-		margin : 20px 40px;
-	}
-	
-	.modal-btn {
-		border-radius : 20px;
-		background-color: #0b0b0b;
-		color : #ffffff;
-		padding : 0px 30px;
-		font-size: 14px;
-		outline: none;
-		margin-left : 50px;
-	}
-	
-	.modal-btn:hover {
-		background-color: #ffffff;
-		color : #0b0b0b;
-	}
+.modal-input {
+	border-radius: 20px;
+	width: 400px;
+	outline: none;
+	margin: 20px 40px;
+}
+
+.modal-btn {
+	border-radius: 20px;
+	background-color: #0b0b0b;
+	color: #ffffff;
+	padding: 0px 30px;
+	font-size: 14px;
+	outline: none;
+	margin-left: 50px;
+}
+
+.modal-btn:hover {
+	background-color: #ffffff;
+	color: #0b0b0b;
+}
 </style>
 
 <!--   col divide -->
@@ -56,6 +56,7 @@
 					<th>NO</th>
 					<th>TITLE</th>
 					<th>WRITTIN</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -64,6 +65,8 @@
 						<td>${event.uid }</td>
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
+						<td><button type="button" class="btn btn-default"
+								id="js-deleteBtn">삭제</button></td>
 					<tr>
 				</c:forEach>
 
@@ -82,7 +85,6 @@
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
 			data-target="#myModal">등록</button>
-		<button type="button" class="btn btn-danger" id="js-deleteBtn">삭제</button>
 
 		<!-- Trigger the modal with a button -->
 
@@ -97,10 +99,9 @@
 						<h4 class="modal-title">Would you like to register?</h4>
 					</div>
 					<div class="modal-body">
-						<input type="text" class="modal-input" placeholder="title" /> 
-						<br />
-						<input type="text" class="modal-input" placeholder="author" />
-						<br />
+						<input type="text" class="modal-input" id="modal-title"
+							placeholder="title" /> <br /> <input type="text"
+							class="modal-input" id="modal-author" placeholder="author" /> <br />
 						<button type="button" class="modal-btn" id="js-modal-insert">저장하기</button>
 					</div>
 					<div class="modal-footer">
@@ -118,19 +119,24 @@
 
 
 <script type="text/javascript">
-
-
 	const butt = document.getElementById("js-deleteBtn");
 	const buttt = document.getElementById("js-modal-insert");
 
-	
 	function moveButt() {
 		location.href = "/events/schoolPage";
 
 	}
 
 	function moveButtt() {
-		location.href = "/events/schoolPage";
+
+		const modalTitle = document.getElementById("modal-title");
+		const modalAuthor = document.getElementById("modal-author");
+
+		const title = modalTitle.value;
+		const author = modalAuthor.value;
+
+		location.href = "/events/eventInsert?title=" + title + "&written="
+				+ author;
 	}
 
 	butt.addEventListener("click", moveButt);
