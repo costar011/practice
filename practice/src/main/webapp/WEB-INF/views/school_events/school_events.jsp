@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="EUC-KR"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -7,15 +7,15 @@
 	crossorigin="anonymous"></script>
 
 
-<!-- ÇÕÃÄÁö°í ÃÖ¼ÒÈ­µÈ ÃÖ½Å CSS -->
+<!-- í•©ì³ì§€ê³  ìµœì†Œí™”ëœ ìµœì‹  CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-<!-- ºÎ°¡ÀûÀÎ Å×¸¶ -->
+<!-- ë¶€ê°€ì ì¸ í…Œë§ˆ -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<!-- ÇÕÃÄÁö°í ÃÖ¼ÒÈ­µÈ ÃÖ½Å ÀÚ¹Ù½ºÅ©¸³Æ® -->
+<!-- í•©ì³ì§€ê³  ìµœì†Œí™”ëœ ìµœì‹  ìë°”ìŠ¤í¬ë¦½íŠ¸ -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
@@ -66,7 +66,7 @@
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
 						<td><button type="button" class="btn btn-default"
-								id="js-deleteBtn">»èÁ¦</button></td>
+								id="js-deleteBtn">ì‚­ì œ</button></td>
 					<tr>
 				</c:forEach>
 
@@ -84,7 +84,7 @@
 	<div class="col-md-2">
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
-			data-target="#myModal">µî·Ï</button>
+			data-target="#myModal">ë“±ë¡</button>
 
 		<!-- Trigger the modal with a button -->
 
@@ -102,7 +102,7 @@
 						<input type="text" class="modal-input" id="modal-title"
 							placeholder="title" /> <br /> <input type="text"
 							class="modal-input" id="modal-author" placeholder="author" /> <br />
-						<button type="button" class="modal-btn" id="js-modal-insert">ÀúÀåÇÏ±â</button>
+						<button type="button" class="modal-btn" id="js-modal-insert">ì €ì¥í•˜ê¸°</button>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -143,12 +143,12 @@
 	buttt.addEventListener("click", moveButtt);
 
 	/*
-	if (confirm("µî·ÏÇÏ½Ã°Ú½À´Ï±î?")) {
-		// È®ÀÎ ¹öÆ° Å¬¸¯ ½Ã µ¿ÀÛ
-		alert("µî·Ï ¿Ï·á.");
+	if (confirm("ë“±ë¡í•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) {
+		// í™•ì¸ ë²„íŠ¼ í´ë¦­ ì‹œ ë™ì‘
+		alert("ë“±ë¡ ì™„ë£Œ.");
 	} else
-		// Ãë¼Ò ¹öÆ° Å¬¸¯½Ã
-		alert("µî·Ï Ãë¼Ò");
+		// ì·¨ì†Œ ë²„íŠ¼ í´ë¦­ì‹œ
+		alert("ë“±ë¡ ì·¨ì†Œ");
 	 */
 </script>
 
