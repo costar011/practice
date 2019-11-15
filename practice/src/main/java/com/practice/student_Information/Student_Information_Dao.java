@@ -33,5 +33,11 @@ public class Student_Information_Dao {
 		sqlSessionTemplate.delete("student.deleteStu",  uid);
 		
 	}
+	
+	public void studenChange(String uid) {
+		
+		sqlSessionTemplate.delete("student.changeStu",  uid);
+		
+	}
 
 }
