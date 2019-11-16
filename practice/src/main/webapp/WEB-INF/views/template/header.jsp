@@ -48,7 +48,7 @@
 				<li><a href="${pageContext.request.contextPath }/main/mainPage">Home
 						Page</a></li>
 				<li><a
-					href="${pageContext.request.contextPath }/student/sudentPage">Student
+					href="${pageContext.request.contextPath }/studentt/studentPage">Student
 						Information</a></li>
 				<li><a
 					href="${pageContext.request.contextPath }/teacher/teacherPage">Teacher
