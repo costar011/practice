@@ -79,7 +79,7 @@ public class Student_Information_Controller {
 		aa.studentChange(mobile2);
 		aa.studentChange(add);
 		
-		return "";
+		return "redirect:studentPage";
 	
 	}
 

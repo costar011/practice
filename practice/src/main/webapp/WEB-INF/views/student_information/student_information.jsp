@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="EUC-KR"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <script
@@ -106,11 +106,14 @@
 				<h4 class="modal-title">Modal Header</h4>
 			</div>
 			<div class="modal-body">
-				<input class="form-control" type="text" />
-				<input class="form-control" type="text" />
-				<input class="form-control" type="text" />
-				<input class="form-control" type="text" />
-				
+				<input class="form-control" type="text" placeholder="NAME"/>
+				<br>
+				<input class="form-control" type="text" placeholder="MOBILE"/>
+				<br>
+				<input class="form-control" type="text" placeholder="MOBILE2"/>
+				<br>
+				<input class="form-control" type="text" placeholder="ADDERSS"/>
+				<br>
 				<button type="button" > 저장하기 </button>
 			</div>
 			<div class="modal-footer">
