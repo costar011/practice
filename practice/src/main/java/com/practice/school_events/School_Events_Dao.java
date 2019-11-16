@@ -24,7 +24,7 @@ public class School_Events_Dao {
 
 	}
 
-	public void EventInsert(SchoolEventVO vo) {
+	public void eventInsert(SchoolEventVO vo) {
 
 		sqlSessionTemplate.insert("event.schoolInsert", vo);
 	}
@@ -34,4 +34,7 @@ public class School_Events_Dao {
 		sqlSessionTemplate.insert("event.schoolDelete", uid);
 	}
 
+
+	
+	
 }

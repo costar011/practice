@@ -23,7 +23,7 @@ public class School_Events_Service {
 
 	public void insertEvent(SchoolEventVO vo) {
 
-		ssDao.EventInsert(vo);
+		ssDao.eventInsert(vo);
 	}
 
 	public void eventDelet(String uid) {

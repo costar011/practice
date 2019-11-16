@@ -55,11 +55,10 @@ public class School_Events_Controller {
 		
 		ss.eventDelet(uid);
 		
-		return "schoolPage";
+		return "redirect:schoolPage";
 		
 	}
 	
 	
 	
-	
-}
+	}

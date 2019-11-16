@@ -65,7 +65,7 @@
 						<td>${event.uid }</td>
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
-						<td><button type="button" class="btn btn-default" id="js-deleteBtn">삭제</button></td>
+						<td><button type="button" class="btn btn-default" onclick="clickDeleteBtn(${event.uid })">삭제</button></td>
 					<tr>
 				</c:forEach>
 
@@ -118,8 +118,13 @@
 
 
 <script type="text/javascript">
+
 	const butt = document.getElementById("js-deleteBtn");
 	const buttt = document.getElementById("js-modal-insert");
+	
+	function clickDeleteBtn(uid){
+		console.log(uid);
+	}
 
 	function moveButt() {
 		location.href = "/events/schoolPage";
