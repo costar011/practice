@@ -49,6 +49,7 @@
   		MOBLILE = #{moblile},
   		MOBLILE2 = #{moblile2},
   		ADDRESS = #{address}
+  	WHERE 
   	
   	</update>
   	

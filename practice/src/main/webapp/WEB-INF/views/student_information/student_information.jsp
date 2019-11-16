@@ -73,7 +73,8 @@
 							<td>${student.moblile2 }</td>
 							<td>${student.address }</td>
 							<td><button type="button" class="del-btn" onclick="moveDe(${student.uid })">삭제</button></td>
-							<td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">수정</button></td>
+							<td><button type="button" onclick="sendData('${student.uid }', '${student.name }', '${student.moblile }', '${student.moblile2 }', '${student.address }')" 
+							class="btn btn-info" data-toggle="modal" data-target="#myModal">수정</button></td>
 						</tr>
 
 					</c:forEach>
@@ -88,7 +89,7 @@
 	</div>
 	
 		<div class="col-md-2">
-
+		<br><br>
 		<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
 	
 		
@@ -106,15 +107,15 @@
 				<h4 class="modal-title">Modal Header</h4>
 			</div>
 			<div class="modal-body">
-				<input class="form-control" type="text" placeholder="NAME"/>
+				<input class="form-control" id="modal_name" type="text" placeholder="NAME"/>
 				<br>
-				<input class="form-control" type="text" placeholder="MOBILE"/>
+				<input class="form-control" id="modal_moblile" type="text" placeholder="MOBILE"/>
 				<br>
-				<input class="form-control" type="text" placeholder="MOBILE2"/>
+				<input class="form-control" id="modal_moblile2" type="text" placeholder="MOBILE2"/>
 				<br>
-				<input class="form-control" type="text" placeholder="ADDERSS"/>
+				<input class="form-control" id="modal_address" type="text" placeholder="ADDERSS"/>
 				<br>
-				<button type="button" > 저장하기 </button>
+				<button type="button" id="js-updateBtn"> 저장하기 </button>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -132,6 +133,9 @@
 
 	const insert1 = document.getElementById("js-insertBtn");
 	const delete1 = document.getElementById("js-deleteBtn");
+	const update1 = document.getElementById("js-updateBtn");
+	
+	/* const upBtn = document.getElementById("js-upBtn"); */
 	
 	
 
@@ -144,7 +148,33 @@
 		location.href = "/studentt/deleteStudent?uid=" + uid;
 	};
 
+	function moveUp() {
+		location.href = "/studentt/studentPage";
+	}
+	
+	function sendData(uid, name, moblile, moblile2, address){
+		
+		const modalName = document.getElementById("modal_name");
+		modalName.value = name;
+		
+		const modalMoblile = document.getElementById("modal_moblile");
+		modalMoblile.value = moblile;
+		
+		const modalMoblile2 = document.getElementById("modal_moblile2");
+		modalMoblile2.value = moblile2;
+		
+		const modalAddress = document.getElementById("modal_address");
+		modalAddress.value = address;
+		
+		
+	}
+	
 	insert1.addEventListener("click", moveIn);
-
+	update1.addEventListener("click", moveUp);
+	/* upBtn.addEventListener("click", sendData); */
 
 </script>
+
+
+
+
