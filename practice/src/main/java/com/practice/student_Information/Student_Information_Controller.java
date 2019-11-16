@@ -74,10 +74,10 @@ public class Student_Information_Controller {
 								,@RequestParam("mobile2")String mobile2
 								,@RequestParam("add")String add) {
 		
-		aa.studentDelete(name);
-		aa.studentDelete(mobile);
-		aa.studentDelete(mobile2);
-		aa.studentDelete(add);
+		aa.studentChange(name);
+		aa.studentChange(mobile);
+		aa.studentChange(mobile2);
+		aa.studentChange(add);
 		
 		return "";
 	

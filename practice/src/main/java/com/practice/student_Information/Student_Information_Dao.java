@@ -34,9 +34,9 @@ public class Student_Information_Dao {
 		
 	}
 	
-	public void studenChange(String uid) {
+	public void studentChange(String uid) {
 		
-		sqlSessionTemplate.delete("student.changeStu",  uid);
+		sqlSessionTemplate.update("student.changeStu", uid);
 		
 	}
 
