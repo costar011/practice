@@ -36,4 +36,5 @@ public class Student_Information_Service {
 		aa.studentUpdate(vo);
 	}
 	
+	
 }

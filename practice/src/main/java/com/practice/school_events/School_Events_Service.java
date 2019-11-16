@@ -26,9 +26,15 @@ public class School_Events_Service {
 		ssDao.eventInsert(vo);
 	}
 
-	public void eventDelet(String uid) {
+	public void Deletevent(String uid) {
 
-		ssDao.eventDelet(uid);
+		ssDao.eventDelete(uid);
+		
 	}
 
+	public void Change(String uid)	{
+		
+		ssDao.eventChange(uid);
+	}
+	
 }

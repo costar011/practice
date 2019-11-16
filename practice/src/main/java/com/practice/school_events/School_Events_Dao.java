@@ -29,12 +29,15 @@ public class School_Events_Dao {
 		sqlSessionTemplate.insert("event.schoolInsert", vo);
 	}
 
-	public void eventDelet(String uid) {
+	public void eventDelete(String uid) {
 
-		sqlSessionTemplate.insert("event.schoolDelete", uid);
+		sqlSessionTemplate.delete("event.schooldelet", uid);
 	}
 
-
 	
+
+	public void eventChange(String uid)	{
+		sqlSessionTemplate.update("event.schoolchange", uid);
+	}
 	
 }

@@ -49,14 +49,25 @@ public class School_Events_Controller {
 	}
 	
 	@RequestMapping("/deleteschoolevents")
-	public String deleteschoolevents(@RequestParam("uid")String uid) {
+	public String schooldelet(@RequestParam("uid")String uid) {
 		
 		System.out.println(uid);
-		
-		ss.eventDelet(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
 		
 		return "redirect:schoolPage";
 		
+	}
+	
+	@RequestMapping("/changeschoolevents")
+	public String changeschoolevents(@RequestParam("title")String title
+									,@RequestParam("author")String written) {
+		
+		ss.Change(title);
+		ss.Change(written);
+		
+		return "redirect:schoolPage";
 	}
 	
 	
