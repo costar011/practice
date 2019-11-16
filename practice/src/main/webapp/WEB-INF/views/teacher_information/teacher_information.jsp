@@ -85,4 +85,6 @@
 	admin.addEventListener("click", moveAdmin);
 	teacher.addEventListener("click", moveTeacher);
 	other.addEventListener("click", moveOther);
+	
+	
 </script>
