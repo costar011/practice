@@ -31,9 +31,10 @@ public class School_Events_Dao {
 
 	public void eventDelete(String uid) {
 
-		sqlSessionTemplate.delete("event.schoolDelete", uid);
+		sqlSessionTemplate.delete("event.schooldelet", uid);
 	}
 
+	
 
 	public void eventChange(String uid)	{
 		sqlSessionTemplate.update("event.schoolchange", uid);

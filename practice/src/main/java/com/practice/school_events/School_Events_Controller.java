@@ -49,15 +49,12 @@ public class School_Events_Controller {
 	}
 	
 	@RequestMapping("/deleteschoolevents")
-	public String deleteschoolevents(@RequestParam("uid")String uid) {
+	public String schooldelet(@RequestParam("uid")String uid) {
 		
 		System.out.println(uid);
 		System.out.println(uid);
 		System.out.println(uid);
 		System.out.println(uid);
-		
-		
-		
 		
 		return "redirect:schoolPage";
 		

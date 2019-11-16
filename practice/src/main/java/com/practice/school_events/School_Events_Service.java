@@ -29,6 +29,7 @@ public class School_Events_Service {
 	public void Deletevent(String uid) {
 
 		ssDao.eventDelete(uid);
+		
 	}
 
 	public void Change(String uid)	{

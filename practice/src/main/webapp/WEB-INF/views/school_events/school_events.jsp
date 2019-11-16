@@ -143,8 +143,7 @@
 		
 		const uid		=	modelUid.value;
 
-		location.href = "/events/eventInsert?title=" + title + "&written="
-				+ author;
+		
 	}
 
 	//butt.addEventListener("click", moveButt);
@@ -158,4 +157,6 @@
 		// 취소 버튼 클릭시
 		alert("등록 취소");
 	 */
+	 
+	 
 </script>
