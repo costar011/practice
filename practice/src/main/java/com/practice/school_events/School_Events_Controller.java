@@ -52,11 +52,25 @@ public class School_Events_Controller {
 	public String deleteschoolevents(@RequestParam("uid")String uid) {
 		
 		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
 		
-		ss.eventDelet(uid);
+		
+		
 		
 		return "redirect:schoolPage";
 		
+	}
+	
+	@RequestMapping("/changeschoolevents")
+	public String changeschoolevents(@RequestParam("title")String title
+									,@RequestParam("author")String written) {
+		
+		ss.Change(title);
+		ss.Change(written);
+		
+		return "redirect:schoolPage";
 	}
 	
 	

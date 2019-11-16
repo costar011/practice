@@ -65,7 +65,9 @@
 						<td>${event.uid }</td>
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
-						<td><button type="button" class="btn btn-default" onclick="clickDeleteBtn(${event.uid })">삭제</button></td>
+
+						<td><button type="button" class="btn btn-default"
+								onclick="clickDeleteBtn(${event.uid })">삭제</button></td>
 					<tr>
 				</c:forEach>
 
@@ -84,6 +86,7 @@
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
 			data-target="#myModal">등록</button>
+		<button type="button" class="btn btn-primary">수정</button>
 
 		<!-- Trigger the modal with a button -->
 
@@ -124,6 +127,8 @@
 	
 	function clickDeleteBtn(uid){
 		console.log(uid);
+
+		location.href = "/events/deleteschoolevents?uid="+uid;
 	}
 
 	function moveButt() {
@@ -135,15 +140,14 @@
 
 		const modalTitle = document.getElementById("modal-title");
 		const modalAuthor = document.getElementById("modal-author");
-
-		const title = modalTitle.value;
-		const author = modalAuthor.value;
+		
+		const uid		=	modelUid.value;
 
 		location.href = "/events/eventInsert?title=" + title + "&written="
 				+ author;
 	}
 
-	butt.addEventListener("click", moveButt);
+	//butt.addEventListener("click", moveButt);
 	buttt.addEventListener("click", moveButtt);
 
 	/*
@@ -155,6 +159,3 @@
 		alert("등록 취소");
 	 */
 </script>
-
-
-
