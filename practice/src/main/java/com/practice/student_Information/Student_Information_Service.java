@@ -32,8 +32,8 @@ public class Student_Information_Service {
 		aa.studentDelete(uid);
 	}
 	
-	public void studentChange(String uid) {
-		aa.studentChange(uid);
+	public void studentUpdate(StudentVO vo) {
+		aa.studentUpdate(vo);
 	}
 	
 }
