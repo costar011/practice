@@ -40,5 +40,25 @@
   		DELETE FROM STUDENT
   		 WHERE UID = #{uid}
   	</delete>
+  	
+  	
+  	<update id="changeStu" parameterType="string">
+  	
+  	UPDATE STUDENT
+  	SET NAME = #{name},
+  		MOBLILE = #{moblile},
+  		MOBLILE2 = #{moblile2},
+  		ADDRESS = #{address}
+  	
+  	</update>
+  	
+  	
   
   </mapper>
+  
+  
+  
+  
+  
+  
+  
