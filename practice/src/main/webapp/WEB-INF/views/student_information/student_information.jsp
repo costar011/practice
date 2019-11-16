@@ -137,6 +137,7 @@
 	
 	/* const upBtn = document.getElementById("js-upBtn"); */
 	
+	var updateUid = '';
 	
 
 	function moveIn() {
@@ -149,10 +150,22 @@
 	};
 
 	function moveUp() {
-		location.href = "/studentt/studentPage";
+		
+		console.log(updateUid);
+		
+		const modalName = document.getElementById("modal_name");
+		const modalMoblile = document.getElementById("modal_moblile");
+		const modalMoblile2 = document.getElementById("modal_moblile2");
+		const modalAddress = document.getElementById("modal_address");
+		
+		location.href = "/studentt/studenupdate?uid="+ updateUid + "&name=" + modalName.value + "&moblile=" + modalMoblile.value + "&moblile2=" + modalMoblile2.value + "&address=" + modalAddress.value;
+		
+		updateUid = '';
 	}
 	
 	function sendData(uid, name, moblile, moblile2, address){
+		
+		updateUid = uid;
 		
 		const modalName = document.getElementById("modal_name");
 		modalName.value = name;

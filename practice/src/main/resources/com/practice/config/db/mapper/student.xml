@@ -42,14 +42,14 @@
   	</delete>
   	
   	
-  	<update id="changeStu" parameterType="string">
+  	<update id="updateStu" parameterType="studentVO">
   	
   	UPDATE STUDENT
   	SET NAME = #{name},
   		MOBLILE = #{moblile},
   		MOBLILE2 = #{moblile2},
   		ADDRESS = #{address}
-  	WHERE 
+  	WHERE UID = #{uid}
   	
   	</update>
   	

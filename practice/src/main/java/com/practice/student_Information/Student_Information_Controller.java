@@ -68,16 +68,23 @@ public class Student_Information_Controller {
 	}
 	
 	
-	@RequestMapping("/studenchange")
-	public String studentChange(@RequestParam("name")String name
-								,@RequestParam("mobile")String mobile
-								,@RequestParam("mobile2")String mobile2
-								,@RequestParam("add")String add) {
+	@RequestMapping("/studenupdate")
+	public String studentUpdate(@RequestParam("uid")String uid
+								,@RequestParam("name")String name
+								,@RequestParam("moblile")String moblile
+								,@RequestParam("moblile2")String moblile2
+								,@RequestParam("address")String address) {
 		
-		aa.studentChange(name);
-		aa.studentChange(mobile);
-		aa.studentChange(mobile2);
-		aa.studentChange(add);
+		StudentVO vo = new StudentVO();
+		
+		vo.setUid(uid);
+		vo.setName(name);
+		vo.setMoblile(moblile);
+		vo.setMoblile2(moblile2);
+		vo.setAddress(address);
+		
+		
+		aa.studentUpdate(vo);
 		
 		return "redirect:studentPage";
 	

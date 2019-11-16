@@ -34,9 +34,9 @@ public class Student_Information_Dao {
 		
 	}
 	
-	public void studentChange(String uid) {
+	public void studentUpdate(StudentVO vo) {
 		
-		sqlSessionTemplate.update("student.changeStu", uid);
+		sqlSessionTemplate.update("student.updateStu", vo);
 		
 	}
 
