@@ -65,8 +65,7 @@
 						<td>${event.uid }</td>
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
-						<td><button type="button" class="btn btn-default"
-								id="js-deleteBtn">삭제</button></td>
+						<td><button type="button" class="btn btn-default" id="js-deleteBtn">삭제</button></td>
 					<tr>
 				</c:forEach>
 

@@ -26,10 +26,11 @@
 
 	</insert>
 
-	<delete id="schooldelet" parameterType="String">
+	<delete id="schooldelet" parameterType="string">
 
-		DELET FROM SCHOOLEVENT
-		WHERE UID = #{uid}
+		DELET		
+		FROM		SCHOOLEVENT
+	   WHERE		UID = #{uid}
 	</delete>
 
 
