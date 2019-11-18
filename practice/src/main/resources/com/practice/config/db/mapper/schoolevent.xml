@@ -26,13 +26,21 @@
 
 	</insert>
 
-	<delete id="schooldelet" parameterType="string">
+	<delete id="deleteEve" parameterType="string">
 
-		DELET		
-		FROM		SCHOOLEVENT
-	   WHERE		UID = #{uid}
+		DELETE FROM SCHOOLEVENT
+	     WHERE  UID = #{uid}
 	</delete>
 
+
+	<update id="updateEve" parameterType="schooleventVO">
+	
+	UPDATE SCHOOLEVENT
+  	SET TITLE = #{title},
+  		WRITTIN = #{writtin}
+  	  WHERE UID = #{uid}
+  	
+	</update>
 
 </mapper>
 

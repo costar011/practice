@@ -49,23 +49,30 @@ public class School_Events_Controller {
 	}
 	
 	@RequestMapping("/deleteschoolevents")
-	public String schooldelet(@RequestParam("uid")String uid) {
+	public String schooldelete(@RequestParam("uid")String uid) {
 		
 		System.out.println(uid);
 		System.out.println(uid);
 		System.out.println(uid);
 		System.out.println(uid);
+		
+		
+		ss.schooleventDelete(uid);
 		
 		return "redirect:schoolPage";
 		
 	}
 	
-	@RequestMapping("/changeschoolevents")
-	public String changeschoolevents(@RequestParam("title")String title
-									,@RequestParam("author")String written) {
+	@RequestMapping("/schooleventupdate")
+	public String schooleventupdate(@RequestParam("title")String title
+									,@RequestParam("writtin")String writtin) {
 		
-		ss.Change(title);
-		ss.Change(written);
+		SchoolEventVO vo = new SchoolEventVO();
+		
+		vo.setTitle(title);
+		vo.setWrittin(writtin);
+		
+		ss.schooleventUpdate(vo);
 		
 		return "redirect:schoolPage";
 	}
@@ -73,3 +80,19 @@ public class School_Events_Controller {
 	
 	
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

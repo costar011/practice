@@ -12,29 +12,29 @@ import com.practice.model.SchoolEventVO;
 public class School_Events_Service {
 
 	@Resource(name = "school_events_Dao")
-	private School_Events_Dao ssDao;
+	private School_Events_Dao ss;
 
 	public List<SchoolEventVO> sleectAllevent() {
 
-		List<SchoolEventVO> list = ssDao.sleectAllevent();
+		List<SchoolEventVO> list = ss.sleectAllevent();
 
 		return list;
 	}
 
 	public void insertEvent(SchoolEventVO vo) {
 
-		ssDao.eventInsert(vo);
+		ss.eventInsert(vo);
 	}
 
-	public void Deletevent(String uid) {
+	public void schooleventDelete(String uid) {
 
-		ssDao.eventDelete(uid);
+		ss.schooleventDelete(uid);
 		
 	}
 
-	public void Change(String uid)	{
+	public void schooleventUpdate(SchoolEventVO vo)	{
 		
-		ssDao.eventChange(uid);
+		ss.schooleventUpdate(vo);
 	}
 	
 }

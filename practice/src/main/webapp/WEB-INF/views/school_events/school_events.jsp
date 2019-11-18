@@ -66,8 +66,8 @@
 						<td>${event.title }</td>
 						<td>${event.writtin }</td>
 
-						<td><button type="button" class="btn btn-default"
-								onclick="clickDeleteBtn(${event.uid })">삭제</button></td>
+						<td><button type="button" class="del-btn"
+								onclick="moveDe(${event.uid })">삭제</button></td>
 					<tr>
 				</c:forEach>
 
@@ -86,7 +86,8 @@
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
 			data-target="#myModal">등록</button>
-		<button type="button" class="btn btn-primary">수정</button>
+		<button type="button" onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')" 
+		class="btn btn-primary" data-toggle="modal" data-target="#youModal">수정</button>
 
 		<!-- Trigger the modal with a button -->
 
@@ -113,17 +114,49 @@
 
 			</div>
 		</div>
+		
+		<!-- Modal -->
+		<div id="youModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Would you like to register?</h4>
+					</div>
+					<div class="modal-body">
+						<input class="form-control" id="modal_title" type="text" placeholder="TITLE"/>
+						<br>
+						<input class="form-control" id="modal_writtin" type="text" placeholder="WRITTIN"/>
+						<br>
+						<button type="button" id="js-updateBtn"> 저장하기 </button>	
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 	</div>
 </div>
+
+
+
+
 <!-- row END -->
 
 
 
 <script type="text/javascript">
 
-	const butt = document.getElementById("js-deleteBtn");
+	const delect1 = document.getElementById("js-deleteBtn");
+	const update1 = document.getElementById("js-updateBtn");
 	const buttt = document.getElementById("js-modal-insert");
+	
+	var updateUid = '';
 	
 	function clickDeleteBtn(uid){
 		console.log(uid);
@@ -131,10 +164,38 @@
 		location.href = "/events/deleteschoolevents?uid="+uid;
 	}
 
-	function moveButt() {
-		location.href = "/events/schoolPage";
+	function moveDe(uid) {
+		location.href = "/events/deleteschoolevents?uid=" + uid;
+		console.log(uid);
+		console.log(uid);
+		console.log(uid);
 
 	}
+	
+	function moveUp() {
+		
+		const modalTitle = document.getElementById("modal_title");
+		const modalWrittin= document.getElementById("modal_writtin");
+		
+		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + modalTitle.value + "&writtin=" + modalwrittin.value;
+		
+		updateUid = '';
+	}
+	
+	function sendData(uid, title, writtin) {
+		
+		updateUid = uid;
+		
+		const modalTitle = document.getElementById("modal_title");
+		modalTitle.value = title;
+		
+		const modalWrittin = document.getElementById("modal_writtin");
+		modalWrittin.value = writtin;
+		
+	}
+	
+	
+	
 
 	function moveButtt() {
 
