@@ -22,4 +22,11 @@ public class Community_Place_Dao {
 		return list;
 	}
 
+	public void communityDelete(String uid) {
+		
+		sqlSessionTemplate.delete("communtiyplace.deleteComm",  uid);
+		
+	}
+	
+	
 }

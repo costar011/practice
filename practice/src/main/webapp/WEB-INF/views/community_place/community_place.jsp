@@ -27,6 +27,7 @@
 							<td>${comm.title }</td>
 							<td>${comm.name }</td>
 							<td>${comm.written }</td>
+							<td><button type="button" class="del-btn" onclick="moveDe(${comm.uid })">ªË¡¶</button></td>
 						</tr>
 
 					</c:forEach>
@@ -42,7 +43,17 @@
 <!-- row END -->
 
 
+<script>
 
+	const delete1 = document.getElementById("js-deleteBtn");
+
+	function moveDe(uid) {
+		
+		location.href = "/community/deleteCommuntiy?uid=" + uid;
+	};
+
+
+</script>
 
 
 

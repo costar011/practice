@@ -16,4 +16,13 @@
     		ON	A.MEMBER_UID = B.MEMBER_UID;
 	
 	</select>
+	
+	<delete id="deleteComm" parameterType="string">
+	
+  		DELETE FROM TB_BOARD
+  		 WHERE UID = #{uid}
+  		 
+  	</delete>
+  	
+	
 	</mapper>

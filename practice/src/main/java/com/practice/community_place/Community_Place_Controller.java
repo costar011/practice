@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.practice.model.CommunityplaceVO;
 
@@ -26,4 +27,21 @@ public class Community_Place_Controller {
 		
 		return "communityPage";
 	}
+	
+	@RequestMapping("/deleteCommuntiy")
+	public String deleteStudent(@RequestParam("uid")String uid) {
+		
+		cService.communityDelete(uid);
+		
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		
+		
+		return "redirect:communityPage";
+	}
+	
+	
 }

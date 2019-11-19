@@ -22,4 +22,9 @@ public class Community_Place_Service {
 		return list;
 	}
 
+	public void communityDelete(String uid) {
+		
+		cDao.communityDelete(uid);
+	}
+	
 }
