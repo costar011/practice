@@ -88,6 +88,7 @@
 </div>
 <!-- row END -->
 
+
 <script>
 	const school = document.getElementById("schoolBtn");
 	const teacher = document.getElementById("teacherBtn");

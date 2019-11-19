@@ -11,15 +11,14 @@ import com.practice.model.TeacherVO;
 
 @Repository("teacher_Information_Dao")
 public class Teacher_Information_Dao {
-	
-	@Resource(name="sqlSessionTemplate")
-    private SqlSessionTemplate sqlSessionTemplate;
+
+	@Resource(name = "sqlSessionTemplate")
+	private SqlSessionTemplate sqlSessionTemplate;
 
 	public List<TeacherVO> selectTeacher() {
-		
+
 		List<TeacherVO> list = sqlSessionTemplate.selectList("teacher.teacherAllList");
-		
-		
+
 		return list;
 	}
 
