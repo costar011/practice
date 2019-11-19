@@ -21,6 +21,7 @@
 	<div class="masthead">
 		<h3 class="text-muted">School Administration System</h3>
 		<div>
+			
 			<ul class="LoginArea">
 				<c:if test="${!empty login_id}">
 					<li class="LoginArea__list"><a

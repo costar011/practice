@@ -16,7 +16,6 @@
 
 		<table class="table table-hover">
 
-
 			<thead>
 				<tr>
 					<th width="200px"></th>

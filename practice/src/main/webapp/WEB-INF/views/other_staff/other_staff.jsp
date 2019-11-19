@@ -5,30 +5,28 @@
 
 <!--   col divide -->
 <div class="row" style="margin-top: 50px;">
+	<div class="col-md-2"></div>
 	<div class="col-md-8">
-		<h2></h2>
 
 		<!-- Standard button -->
 		<button type="button" class="btn btn-default" id="teachBtn">Teacher</button>
 		<button type="button" class="btn btn-default" id="adminBtn">AdministrativeStaff</button>
 		<button type="button" class="btn btn-default" id="cafeBtn">Cafeteria</button>
 		<button type="button" class="btn btn-default" id="otherBtn">OtherStaff</button>
-	</div>
 
-	<div class="">
-		<table class="table">
+		<table class="table table-hover">
 			<thead>
 				<tr>
-					<th>NO</th>
-					<th>NAME</th>
-					<th>MOBILE</th>
-					<th>SEX</th>
-					<th>JOB</th>
+					<th width="200px">NO</th>
+					<th width="200px">NAME</th>
+					<th width="200px">MOBILE</th>
+					<th width="200px">SEX</th>
+					<th width="200px">JOB</th>
 
-					<th>MGR</th>
-					<th>ADDRESS</th>
-					<th>EMAIL</th>
-					<th>SAL</th>
+					<th width="200px">MGR</th>
+					<th width="200px">ADDRESS</th>
+					<th width="200px">EMAIL</th>
+					<th width="200px">SAL</th>
 				</tr>
 			</thead>
 
@@ -54,6 +52,7 @@
 
 		</table>
 	</div>
+	<div class="col-md-2"></div>
 </div>
 <!-- row END -->
 
