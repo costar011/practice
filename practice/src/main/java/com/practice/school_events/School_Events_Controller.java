@@ -69,10 +69,24 @@ public class School_Events_Controller {
 		
 		SchoolEventVO vo = new SchoolEventVO();
 		
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		System.out.println(title);
+		
+		
 		vo.setTitle(title);
 		vo.setWrittin(writtin);
 		
-		ss.schooleventUpdate(vo);
+		//ss.schooleventUpdate(vo);
 		
 		return "redirect:schoolPage";
 	}

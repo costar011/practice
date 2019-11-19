@@ -68,6 +68,10 @@
 
 						<td><button type="button" class="del-btn"
 								onclick="moveDe(${event.uid })">삭제</button></td>
+								
+						<td><button type="button" onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')" 
+						     class="btn btn-primary" data-toggle="modal" data-target="#youModal">수정</button>
+						</td>
 					<tr>
 				</c:forEach>
 
@@ -76,7 +80,11 @@
 		</table>
 
 	</div>
-	<div class="col-md-2"></div>
+	<div class="col-md-2">
+	
+		
+	
+	</div>
 </div>
 
 <div class="row">
@@ -86,9 +94,7 @@
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
 			data-target="#myModal">등록</button>
-		<button type="button" onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')" 
-		class="btn btn-primary" data-toggle="modal" data-target="#youModal">수정</button>
-
+		
 		<!-- Trigger the modal with a button -->
 
 		<!-- Modal -->
@@ -105,7 +111,7 @@
 						<input type="text" class="modal-input" id="modal-title"
 							placeholder="title" /> <br /> <input type="text"
 							class="modal-input" id="modal-author" placeholder="author" /> <br />
-						<button type="button" class="modal-btn" id="js-modal-insert">저장하기</button>
+						<button type="button" class="modal-btn" id="js-modal-insert">등록하기</button>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -130,7 +136,7 @@
 						<br>
 						<input class="form-control" id="modal_writtin" type="text" placeholder="WRITTIN"/>
 						<br>
-						<button type="button" id="js-updateBtn"> 저장하기 </button>	
+						<button type="button" id="js-updateBtn" > 저장 </button>	
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -152,11 +158,28 @@
 
 <script type="text/javascript">
 
+	//global Variable
+	
+	var updateUid = '';
+	var globalTitle = '';
+	var globalWrittin = '';
+	
+
+
 	const delect1 = document.getElementById("js-deleteBtn");
 	const update1 = document.getElementById("js-updateBtn");
 	const buttt = document.getElementById("js-modal-insert");
 	
-	var updateUid = '';
+	function savebtn(){
+	
+		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + globalTitle + "&writtin=" + globalWrittin;
+		
+	}
+	
+	
+	update1.addEventListener("click", savebtn);
+	
+	
 	
 	function clickDeleteBtn(uid){
 		console.log(uid);
@@ -166,9 +189,10 @@
 
 	function moveDe(uid) {
 		location.href = "/events/deleteschoolevents?uid=" + uid;
+		
 		console.log(uid);
 		console.log(uid);
-		console.log(uid);
+		cosole.log(uid);
 
 	}
 	
@@ -180,11 +204,15 @@
 		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + modalTitle.value + "&writtin=" + modalwrittin.value;
 		
 		updateUid = '';
+		
+		console.log(jsndkendiwiednwed);
 	}
 	
 	function sendData(uid, title, writtin) {
 		
 		updateUid = uid;
+		globalTitle = title;
+		globalWrittin = writtin;
 		
 		const modalTitle = document.getElementById("modal_title");
 		modalTitle.value = title;
@@ -193,6 +221,8 @@
 		modalWrittin.value = writtin;
 		
 	}
+	
+	function change
 	
 	
 	
