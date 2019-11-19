@@ -18,6 +18,7 @@ public class School_Events_Controller {
 	@Resource(name = "school_events_Service")
 	School_Events_Service ss;
 
+	// database
 	@RequestMapping("/schoolPage")
 	public String schoolevents(Model model) {
 		
@@ -29,7 +30,7 @@ public class School_Events_Controller {
 		return "schooleventsPage";
 	}
 	
-	
+	// Insert
 	@RequestMapping("/eventInsert")
 	public String schoolevents(@RequestParam("title")String title
 							   ,@RequestParam("written")String written) {
@@ -48,6 +49,7 @@ public class School_Events_Controller {
 		
 	}
 	
+	// delete
 	@RequestMapping("/deleteschoolevents")
 	public String schooldelete(@RequestParam("uid")String uid) {
 		
@@ -63,6 +65,7 @@ public class School_Events_Controller {
 		
 	}
 	
+	// update
 	@RequestMapping("/schooleventupdate")
 	public String schooleventupdate(@RequestParam("title")String title
 									,@RequestParam("writtin")String writtin) {

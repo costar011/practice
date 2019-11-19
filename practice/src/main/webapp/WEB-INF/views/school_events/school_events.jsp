@@ -222,8 +222,11 @@
 		
 	}
 	
-	function change
 	
+	function change()
+	{
+			
+	}
 	
 	
 
@@ -237,16 +240,21 @@
 		
 	}
 
-	//butt.addEventListener("click", moveButt);
+	// butt.addEventListener("click", moveButt);
 	buttt.addEventListener("click", moveButtt);
 
 	/*
-	if (confirm("등록하시겠습니까?")) {
-		// 확인 버튼 클릭 시 동작
-		alert("등록 완료.");
-	} else
+		if(confirm("등록하시겠습니까?")) 
+		{
+			// 확인 버튼 클릭 시 동작
+			alert("등록 완료.");
+		} 
+		else
+		{
 		// 취소 버튼 클릭시
 		alert("등록 취소");
+		}
+	
 	 */
 	 
 	 

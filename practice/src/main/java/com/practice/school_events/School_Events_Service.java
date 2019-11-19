@@ -11,6 +11,7 @@ import com.practice.model.SchoolEventVO;
 @Service("school_events_Service")
 public class School_Events_Service {
 
+	// database
 	@Resource(name = "school_events_Dao")
 	private School_Events_Dao ss;
 
@@ -21,17 +22,20 @@ public class School_Events_Service {
 		return list;
 	}
 
+	// Insert
 	public void insertEvent(SchoolEventVO vo) {
 
 		ss.eventInsert(vo);
 	}
 
+	// Delete
 	public void schooleventDelete(String uid) {
 
 		ss.schooleventDelete(uid);
 		
 	}
 
+	// Update
 	public void schooleventUpdate(SchoolEventVO vo)	{
 		
 		ss.schooleventUpdate(vo);

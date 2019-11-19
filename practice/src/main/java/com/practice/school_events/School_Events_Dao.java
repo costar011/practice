@@ -12,6 +12,7 @@ import com.practice.model.SchoolEventVO;
 @Repository("school_events_Dao")
 public class School_Events_Dao {
 
+	// database
 	@Resource(name = "sqlSessionTemplate")
 	private SqlSessionTemplate sqlSessionTemplate;
 
@@ -24,18 +25,20 @@ public class School_Events_Dao {
 
 	}
 
+	// Insert
 	public void eventInsert(SchoolEventVO vo) {
 
 		sqlSessionTemplate.insert("event.insertEve", vo);
 	}
 
+	// Delete
 	public void schooleventDelete(String uid) {
 
 		sqlSessionTemplate.delete("event.deleteEve", uid);
 	}
 
 	
-
+	// Update
 	public void schooleventUpdate(SchoolEventVO vo)	{
 		sqlSessionTemplate.update("event.updateEve", vo);
 	}
