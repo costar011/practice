@@ -2,12 +2,11 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  
-  <!-- 합쳐지고 최소화된 최신 CSS -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -18,39 +17,41 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  
 
-	 
+
+
 <style>
-	.modal-input {
-		border-radius : 20px;
-		width : 400px;
-		outline : none;
-		margin : 20px 40px;
-	}
-	
-	.modal-btn {
-		border-radius : 20px;
-		background-color: #0b0b0b;
-		color : #ffffff;
-		padding : 0px 30px;
-		font-size: 14px;
-		outline: none;
-		margin-left : 50px;
-	}
-	
-	.modal-btn:hover {
-		background-color: #ffffff;
-		color : #0b0b0b;
-	}
+.modal-input {
+	border-radius: 20px;
+	width: 400px;
+	outline: none;
+	margin: 20px 40px;
+}
+
+.modal-btn {
+	border-radius: 20px;
+	background-color: #0b0b0b;
+	color: #ffffff;
+	padding: 0px 30px;
+	font-size: 14px;
+	outline: none;
+	margin-left: 50px;
+}
+
+.modal-btn:hover {
+	background-color: #ffffff;
+	color: #0b0b0b;
+}
 </style>
 
 
 <div class="row" style="margin-top: 50px;">
-	
-	<div class = "col-md-10">
-	
-	<table class="table table-hover">
+
+
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+
+		<table class="table table-hover">
 
 
 			<thead>
@@ -61,39 +62,38 @@
 					<th width="200px">MOBILE2</th>
 					<th width="200px">ADDERSS</th>
 				</tr>
+
 			</thead>
-		
+
 			<tbody>
 
-					<c:forEach items="${studentList }" var="student">
-						<tr>
-							<td>${student.uid }</td>
-							<td>${student.name }</td>
-							<td>${student.moblile }</td>
-							<td>${student.moblile2 }</td>
-							<td>${student.address }</td>
-							<td><button type="button" class="del-btn" onclick="moveDe(${student.uid })">삭제</button></td>
-							<td><button type="button" onclick="sendData('${student.uid }', '${student.name }', '${student.moblile }', '${student.moblile2 }', '${student.address }')" 
-							class="btn btn-info" data-toggle="modal" data-target="#myModal">수정</button></td>
-						</tr>
+				<c:forEach items="${studentList }" var="student">
+					<tr>
+						<td>${student.uid }</td>
+						<td>${student.name }</td>
+						<td>${student.moblile }</td>
+						<td>${student.moblile2 }</td>
+						<td>${student.address }</td>
+						<td><button type="button" class="del-btn"
+								onclick="moveDe(${student.uid })">삭제</button></td>
+						<td><button type="button"
+								onclick="sendData('${student.uid }', '${student.name }', '${student.moblile }', '${student.moblile2 }', '${student.address }')"
+								class="btn btn-info" data-toggle="modal" data-target="#myModal">수정</button></td>
+					</tr>
 
-					</c:forEach>
+				</c:forEach>
 
 			</tbody>
-	
-	</table>
-	
-	
-	
-	
+
+		</table>
 	</div>
-	
-		<div class="col-md-2">
-		<br><br>
+
+	<div class="col-md-2">
+		<br> <br>
 		<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
-	
-		
-		</div>
+
+
+	</div>
 
 </div>
 
@@ -107,15 +107,13 @@
 				<h4 class="modal-title">Modal Header</h4>
 			</div>
 			<div class="modal-body">
-				<input class="form-control" id="modal_name" type="text" placeholder="NAME"/>
-				<br>
-				<input class="form-control" id="modal_moblile" type="text" placeholder="MOBILE"/>
-				<br>
-				<input class="form-control" id="modal_moblile2" type="text" placeholder="MOBILE2"/>
-				<br>
-				<input class="form-control" id="modal_address" type="text" placeholder="ADDERSS"/>
-				<br>
-				<button type="button" id="js-updateBtn"> 저장하기 </button>
+				<input class="form-control" id="modal_name" type="text"
+					placeholder="NAME" /> <br> <input class="form-control"
+					id="modal_moblile" type="text" placeholder="MOBILE" /> <br> <input
+					class="form-control" id="modal_moblile2" type="text"
+					placeholder="MOBILE2" /> <br> <input class="form-control"
+					id="modal_address" type="text" placeholder="ADDERSS" /> <br>
+				<button type="button" id="js-updateBtn">저장하기</button>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -124,11 +122,11 @@
 
 	</div>
 </div>
+<!-- row END -->
 
-<!— row END —>
 
-		
-		
+
+
 <script>
 
 	const insert1 = document.getElementById("js-insertBtn");
