@@ -43,13 +43,19 @@
 						<td>${teacher.address }</td>
 						<td>${teacher.email }</td>
 						<td>${teacher.sal }</td>
+						<td><button type="button" class="del-btn" onclick="moveDe(${teacher.uid})">삭제</button></td>
 					<tr>
 				</c:forEach>
 			</tbody>
 		</table>
 	</div>
 
-	<div class="col-md-2"> </div>
+	<div class="col-md-2"> 
+	
+	<br><br>
+	<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
+	
+	</div>
 
 	
 </div>
@@ -59,6 +65,9 @@
 	const admin = document.getElementById("adminBtn");
 	const teacher = document.getElementById("teachBtn");
 	const other = document.getElementById("otherBtn");
+	
+	const insert1 = document.getElementById("js-insertBtn");
+	const delect1 = document.getElementById("js-delectBtn");
 
 	function moveOther() {
 		location.href = "/other_staff/otherstaffPage";
@@ -75,9 +84,20 @@
 	function moveCafe() {
 		location.href = "/cafeteria/cafeteriaPage";
 	}
+	
+	function moveIn() {
+		location.href = "/teacher/insert1Page";
+	}
+	
+	function moveDe(uid) {
+		location.href = "/teacher/deleteTeacher?uid=" + uid;
+	}
+	
 
 	cafe.addEventListener("click", moveCafe);
 	admin.addEventListener("click", moveAdmin);
 	teacher.addEventListener("click", moveTeacher);
 	other.addEventListener("click", moveOther);
+	
+	insert1.addEventListener("click", moveIn);
 </script>

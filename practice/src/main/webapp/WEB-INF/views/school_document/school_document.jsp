@@ -12,67 +12,25 @@
 
 			<thead>
 				<tr>
-					<th width="10%">
-					<th width="30%">TITLE</th>
-					<th width="30%"></th>
-					<th width="30%">WRITTIN</th>
-					<th width="30%"></th>
-					<th width="10%">
+					<th width="200px">NO</th>
+					<th width="200px">TITLE</th>
+					<th width="200px">WRITTIN</th>
 				</tr>
 			</thead>
 
 
 			<tbody>
+			
+			<c:forEach items="${DocumentList }" var="school_document">
+			
 				<tr>
-					<td width="200px"></td>
-					<td width="200px">9월 월말공지사항</td>
-					<td width="200px"></td>
-					<td width="200px">교장</td>
-					<td width="200px"></td>
-					<td width="200px"></td>
-
+					<td>${school_document.uid }</td>
+					<td>${school_document.title }</td>
+					<td>${school_document.writtin }</td>
+	
 				</tr>
 
-				<tr>
-					<td width="200px"></td>
-					<td width="200px">10월 월말공지사항</td>
-					<td width="200px"></td>
-					<td width="200px">교장</td>
-					<td width="200px"></td>
-					<td width="200px"></td>
-
-				</tr>
-
-				<tr>
-					<td width="200px"></td>
-					<td width="200px">10월 행사공지사항</td>
-					<td width="200px"></td>
-					<td width="200px">3학년부장</td>
-					<td width="200px"></td>
-					<td width="200px"></td>
-
-				</tr>
-
-				<tr>
-					<td width="200px"></td>
-					<td width="200px">학교생활기록부</td>
-					<td width="200px"></td>
-					<td width="200px">1학년부장</td>
-					<td width="200px"></td>
-					<td width="200px"></td>
-
-				</tr>
-
-
-				<tr>
-					<td width="200px"></td>
-					<td width="200px">성적증명서</td>
-					<td width="200px"></td>
-					<td width="200px">1학년부장</td>
-					<td width="200px"></td>
-					<td width="200px"></td>
-
-				</tr>
+			</c:forEach>
 
 			</tbody>
 
@@ -82,14 +40,5 @@
 	<div class="col-md-2"></div>
 </div>
 
-<div class="row">
-	<div class="col-md-10"></div>
 
-	<div class="col-md-2">
-	
-		<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
-		<button type="button" class="btn btn-danger">삭제</button>
-
-	</div>
-</div>
 <!-- row END -->

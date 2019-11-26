@@ -147,6 +147,11 @@
 			value="/WEB-INF/views/student_information/student_insert.jsp" />
 	</definition>
 
+	<!-- INSERT1 STUDENT -->
+	<definition name="insert1Page" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/teacher_information/teacher_insert.jsp" />
+	</definition>
 
 
 

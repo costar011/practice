@@ -17,6 +17,40 @@
 		  FROM	TEACHER
 	</select>
 	
+	<insert id="insertTeacher" parameterType="teacherVO">
+	
+	INSERT INTO TEACHER
+	(
+		NAME,
+		MOBILE,
+		SEX,
+		JOB,
+		MGR,
+		ADDRESS,
+		EMAIL,
+		SAL
+	)
+	VALUES
+	(
+		#{name},
+		#{mobile},
+		#{sex},
+		#{job},
+		#{mgr},
+		#{address},
+		#{email},
+		#{sal}	
+	
+	)
+	</insert>
+	
+	<delete id="deteleTeacher" parameterType="string">
+	
+	DELETE FROM TEACHER
+	 WHERE UID = #{uid} 
+	
+	
+	</delete>
 
 </mapper>
 
