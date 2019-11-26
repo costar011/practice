@@ -21,5 +21,17 @@ public class Teacher_Information_Dao {
 
 		return list;
 	}
+	
+	public void teacherInsert(TeacherVO vo) {
+		
+		sqlSessionTemplate.insert("teacher.insertTeacher", vo);
+		
+	}
+	
+	public void teacherDelete(String uid) {
+		
+		sqlSessionTemplate.delete("teacher.deteleTeacher", uid);
+		
+	}
 
 }

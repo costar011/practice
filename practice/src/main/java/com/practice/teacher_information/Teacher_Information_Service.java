@@ -19,5 +19,17 @@ public class Teacher_Information_Service {
 
 		return list;
 	}
+	
+	public void teacherInsert(TeacherVO vo) {
+		
+		sss.teacherInsert(vo);
+		
+	}
+	
+	public void teacherDelete(String uid) {
+		
+		sss.teacherDelete(uid);
+		
+	}
 
 }
