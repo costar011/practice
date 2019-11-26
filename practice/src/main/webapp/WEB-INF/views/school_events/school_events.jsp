@@ -68,10 +68,11 @@
 
 						<td><button type="button" class="del-btn"
 								onclick="moveDe(${event.uid })">삭제</button></td>
-								
-						<td><button type="button" onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')" 
-						     class="btn btn-primary" data-toggle="modal" data-target="#youModal">수정</button>
-						</td>
+
+						<td><button type="button"
+								onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')"
+								class="btn btn-primary" data-toggle="modal"
+								data-target="#youModal">수정</button></td>
 					<tr>
 				</c:forEach>
 
@@ -80,11 +81,7 @@
 		</table>
 
 	</div>
-	<div class="col-md-2">
-	
-		
-	
-	</div>
+	<div class="col-md-2"></div>
 </div>
 
 <div class="row">
@@ -94,7 +91,7 @@
 
 		<button type="button" class="btn btn-info" data-toggle="modal"
 			data-target="#myModal">등록</button>
-		
+
 		<!-- Trigger the modal with a button -->
 
 		<!-- Modal -->
@@ -120,7 +117,7 @@
 
 			</div>
 		</div>
-		
+
 		<!-- Modal -->
 		<div id="youModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
@@ -132,11 +129,10 @@
 						<h4 class="modal-title">Would you like to register?</h4>
 					</div>
 					<div class="modal-body">
-						<input class="form-control" id="modal_title" type="text" placeholder="TITLE"/>
-						<br>
-						<input class="form-control" id="modal_writtin" type="text" placeholder="WRITTIN"/>
-						<br>
-						<button type="button" id="js-updateBtn" > 저장 </button>	
+						<input class="form-control" id="modal_title" type="text"
+							placeholder="TITLE" /> <br> <input class="form-control"
+							id="modal_writtin" type="text" placeholder="WRITTIN" /> <br>
+						<button type="button" id="js-updateBtn">저장</button>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

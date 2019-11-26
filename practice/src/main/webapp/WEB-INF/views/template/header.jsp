@@ -69,7 +69,6 @@
 				<li><a
 					href="${pageContext.request.contextPath }/school/schoolPage">School
 						Document</a></li>
-						
 			</ul>
 		</nav>
 	</div>

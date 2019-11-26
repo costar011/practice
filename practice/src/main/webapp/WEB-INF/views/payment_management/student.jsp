@@ -4,6 +4,7 @@
 
 <!--   col divide -->
 <div class="row" style="margin-top: 50px;">
+	<div class="col-md-1"></div>
 	<div class="col-md-10">
 
 
@@ -106,10 +107,8 @@
 		location.href = "/payment/studentPage";
 	}
 
-	
 	school.addEventListener("click", moveSchool);
 	student.addEventListener("click", moveStudent);
 	teacher.addEventListener("click", moveTeacher);
-	
 </script>
 
