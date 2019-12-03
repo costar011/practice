@@ -140,7 +140,7 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/student.jsp" />
 	</definition>
-	
+
 	<!-- INSERT STUDENT -->
 	<definition name="insertPage" extends="layout">
 		<put-attribute name="content"
@@ -153,11 +153,20 @@
 			value="/WEB-INF/views/teacher_information/teacher_insert.jsp" />
 	</definition>
 
+<<<<<<< HEAD
 	<!-- INSERT EVENT -->
 	<definition name="eventInsert" extends="layout">
 		<put-attribute name="content"
 			value="/WEB-INF/views/school_events/school_insert.jsp" />
 	</definition>
+=======
+	<!-- INSERT DOCUMENT -->
+	<definition name="documentInsert" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/school_document/school_document.jsp" />
+	</definition>
+
+>>>>>>> refs/remotes/origin/master
 
 
 
