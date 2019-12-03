@@ -15,15 +15,15 @@
   	</select>
   	
   	<insert id="insertdocument" parameterType="DocumentVO">
-  		INSERT INTO DOCUMENT
+  		INSERT INTO SCHOOLDOCUMENT
   		(
   			TITLE
   			,WRITTIN
   		)
   		VALUES
   		(
-  			${title }
-  			,${writtin }
+  			'${title }'
+  			,'${writtin }'
   		)
   	</insert>  	
   	

@@ -157,7 +157,15 @@
 	const moveInsert = document.getElementById("js-modal-insert");
 
 	function moveIn() {
-		location.href = "school_document/insertPage";
+		
+		const title = document.getElementById("modal-title").value;
+		const author = document.getElementById("modal-author").value;
+		
+		console.log(title);
+		console.log(author);
+		
+		location.href = "/school/documentInsert?title=" + title + "&author=" + author;
+		
 	}
 
 	
@@ -175,7 +183,6 @@
 		
 	}
 	
-	
-	
+	moveInsert.addEventListener("click",moveIn);
 	
 </script>
