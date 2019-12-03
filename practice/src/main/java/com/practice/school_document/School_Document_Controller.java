@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.practice.model.DocumentVO;
 import com.practice.student_Information.Student_Information_Service;
@@ -27,4 +28,28 @@ public class School_Document_Controller {
 		
 		return "schooldocumentPage";
 	}
+	
+	@RequestMapping("/insertPage1") 
+	public String insertPage() {
+	
+		return "insertPage1";
+	
+	}
+	
+	@RequestMapping("/documentInsert")
+	public String documentInsert(@RequestParam("title")String title
+								,@RequestParam("writtin")String writtin) {
+		
+		DocumentVO vo = new DocumentVO();
+		
+		vo.setTitle(title);
+		vo.setWrittin(writtin);
+		
+		aa.inserDocument(vo);
+		
+		
+		return "redirect:schooldocumentPage";
+	}
+	
+	
 }

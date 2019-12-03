@@ -36,8 +36,7 @@
 					<li class="LoginArea__list"><a
 						href="${pageContext.request.contextPath }/signin/signinPage">Login</a></li>
 					<li class="LoginArea__list"><a
-						href="${pageContext.request.contextPath }/signup/signupPage">Sign
-							Up</a></li>
+						href="${pageContext.request.contextPath }/signup/signupPage">Sign Up</a></li>
 				</c:if>
 			</ul>
 

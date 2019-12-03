@@ -16,7 +16,7 @@
 		   	<typeAlias  alias="commVO" type="com.practice.model.CommunityplaceVO"/>
 		   	<typeAlias  alias="studentVO" type="com.practice.model.StudentVO"/>
 		   	<typeAlias  alias="SchoolEventVO" type="com.practice.model.SchoolEventVO"/>
-		   	<typeAlias  alias="documentVO" type="com.practice.model.DocumentVO"/>
+		   	<typeAlias  alias="DocumentVO" type="com.practice.model.DocumentVO"/>
 	  </typeAliases>
 	  
 	  
@@ -32,7 +32,7 @@
 	  		<mapper resource="com/practice/config/db/mapper/communtiy.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/student.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/schoolevent.xml"/>
-	  		<mapper resource="com/practice/config/db/mapper/Document.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/document.xml"/>
 	  </mappers> 
 	  
 	  
