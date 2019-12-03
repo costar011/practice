@@ -89,35 +89,11 @@
 
 	<div class="col-md-2">
 
-		<button type="button" class="btn btn-info" data-toggle="modal"
-			data-target="#myModal">등록</button>
+		<button type="button" class="btn btn-info" id="js-insertBtn">등록</button>
 
 		<!-- Trigger the modal with a button -->
 
-		<!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Would you like to register?</h4>
-					</div>
-					<div class="modal-body">
-						<input type="text" class="modal-input" id="modal-title"
-							placeholder="title" /> <br /> <input type="text"
-							class="modal-input" id="modal-author" placeholder="author" /> <br />
-						<button type="button" class="modal-btn" id="js-modal-insert">등록하기</button>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
+	
 		<!-- Modal -->
 		<div id="youModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
@@ -158,6 +134,7 @@
 	
 
 
+	const insert1 = document.getElementById("js-insertBtn")
 	const delect1 = document.getElementById("js-deleteBtn");
 	const update1 = document.getElementById("js-updateBtn");
 	const buttt = document.getElementById("js-modal-insert");
@@ -231,9 +208,16 @@
 
 		
 	}
+	
+	function moveIn() {
+	
+		location.href = "/events/eventInsert";
+	
+	};
 
 	// butt.addEventListener("click", moveButt);
-	buttt.addEventListener("click", moveButtt);
+	
+	insert1.addEventListener("click", moveIn);
 
 	/*
 		if(confirm("등록하시겠습니까?")) 
