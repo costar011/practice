@@ -155,6 +155,7 @@
 	var globalWrittin = '';
 
 	const moveInsert = document.getElementById("js-modal-insert");
+	const moveDe 	 = document.getgetElementById("btn btn-default");
 
 	function moveIn() {
 		
@@ -184,5 +185,6 @@
 	}
 	
 	moveInsert.addEventListener("click",moveIn);
+	moveDe.addEventListener("click",moveDe);
 	
 </script>

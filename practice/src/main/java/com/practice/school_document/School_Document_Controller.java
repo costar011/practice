@@ -64,5 +64,6 @@ public class School_Document_Controller {
 
 		return "redirect:schoolPage";
 	}
+	
 
 }
