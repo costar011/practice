@@ -32,20 +32,12 @@ public class School_Events_Controller {
 	
 	// Insert
 	@RequestMapping("/eventInsert")
-	public String schoolevents(@RequestParam("title")String title
-							   ,@RequestParam("written")String written) {
-		
-		SchoolEventVO vo = new SchoolEventVO();
-		System.out.println(title);
-		System.out.println(written);
-		
-		vo.setTitle(title);
-		vo.setWrittin(written);
-		
-		ss.insertEvent(vo);
+	public String schoolevents() {
 		
 		
-		return "redirect:schoolPage";
+		
+		
+		return "eventInsert";
 		
 	}
 	
