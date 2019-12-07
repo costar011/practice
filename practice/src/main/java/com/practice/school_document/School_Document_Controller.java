@@ -65,6 +65,14 @@ public class School_Document_Controller {
 		return "redirect:schoolPage";
 	}
 	
+	@RequestMapping("/documentDelete")
+	public String documentDelete(@RequestParam("uid")String uid) {
+		
+		aa.deleteDocument(uid);
+		
+		System.out.println(uid);
+		return "redirect:schoolPage";
+		
+	}
 
-	
 }

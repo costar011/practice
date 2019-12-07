@@ -72,7 +72,7 @@
 						<td>${school_document.uid }</td>
 						<td>${school_document.title }</td>
 						<td>${school_document.writtin }</td>
-						<td><button type="button" class="btn btn-default"
+						<td><button type="button" class="del-btn"
 								onclick="moveDe(${school_document.uid})">ªË¡¶</button></td>
 						<td><button type="button"
 								onclick="sendData('${school_document.title }', '${school_document.writtin }')"
@@ -155,7 +155,7 @@
 	var globalWrittin = '';
 
 	const moveInsert = document.getElementById("js-modal-insert");
-	const moveDe 	 = document.getgetElementById("btn btn-default");
+	const moveDelete = document.getElementById("js-del-btn");
 
 	function moveIn() {
 		
@@ -172,12 +172,14 @@
 	
 	function clickDeleteBtn(uid) {
 		console.log(uid)
-		location.href = "/school_document/deleteschool_document?uid"+uid;
+		location.href = "/school/deleteschool_document?uid"+uid;
 	}
 	
-	function moveDe (uid) {
-		location.href = "/school_document/deleteschool_document?uid"+uid;
+	function moveDe(uid) {
+		location.href = "/school/documentDelete?uid"+uid;
 		
+		console.log(uid);
+		console.log(uid); 
 		console.log(uid);
 		console.log(uid);
 		console.log(uid);
@@ -185,6 +187,5 @@
 	}
 	
 	moveInsert.addEventListener("click",moveIn);
-	moveDe.addEventListener("click",moveDe);
 	
 </script>

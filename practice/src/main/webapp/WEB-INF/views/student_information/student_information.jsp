@@ -128,7 +128,7 @@
 
 
 <script>
-
+	
 	const insert1 = document.getElementById("js-insertBtn");
 	const delete1 = document.getElementById("js-deleteBtn");
 	const update1 = document.getElementById("js-updateBtn");

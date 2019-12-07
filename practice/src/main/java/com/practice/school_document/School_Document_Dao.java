@@ -26,4 +26,10 @@ public class School_Document_Dao {
 		sqlSessionTemplate.insert("insertdocument", vo);
 	}
 
+	
+	public void deleteDocument(String uid) {
+		
+		sqlSessionTemplate.delete("deleteDocument", uid);
+		
+	}
 }
