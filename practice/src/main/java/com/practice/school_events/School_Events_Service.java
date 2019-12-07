@@ -22,11 +22,13 @@ public class School_Events_Service {
 		return list;
 	}
 
-	// Insert
-	public void insertEvent(SchoolEventVO vo) {
+	
+	// eventInsertAction
+	public void eventInsertAction(SchoolEventVO vo) {
 
-		ss.eventInsert(vo);
+		ss.eventInsertAction(vo);
 	}
+	
 
 	// Delete
 	public void schooleventDelete(String uid) {

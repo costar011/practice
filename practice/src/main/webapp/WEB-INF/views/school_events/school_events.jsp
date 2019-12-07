@@ -53,10 +53,10 @@
 
 			<thead>
 				<tr>
-					<th>NO</th>
-					<th>TITLE</th>
-					<th>WRITTIN</th>
-					<th></th>
+					<th width="200px">NO</th>
+					<th width="200px">TITLE</th>
+					<th width="200px">WRITTIN</th>
+					<th width="200px"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -71,8 +71,8 @@
 
 						<td><button type="button"
 								onclick="sendData('${event.uid}', '${event.title}', '${event.writtin}')"
-								class="btn btn-primary" data-toggle="modal"
-								data-target="#youModal">수정</button></td>
+								class="btn btn-info" data-toggle="modal"
+								data-target="#myModal">수정</button></td>
 					<tr>
 				</c:forEach>
 
@@ -95,7 +95,7 @@
 
 	
 		<!-- Modal -->
-		<div id="youModal" class="modal fade" role="dialog">
+		<div id="myModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 
 				<!-- Modal content-->
@@ -105,9 +105,13 @@
 						<h4 class="modal-title">Would you like to register?</h4>
 					</div>
 					<div class="modal-body">
+					  
+					
 						<input class="form-control" id="modal_title" type="text"
-							placeholder="TITLE" /> <br> <input class="form-control"
-							id="modal_writtin" type="text" placeholder="WRITTIN" /> <br>
+							placeholder="TITLE" /> <br> 
+							
+						<input class="form-control"
+						id="modal_writtin" type="text" placeholder="WRITTIN" /> <br>
 						<button type="button" id="js-updateBtn">저장</button>
 					</div>
 					<div class="modal-footer">
@@ -134,20 +138,10 @@
 	
 
 
-	const insert1 = document.getElementById("js-insertBtn")
+	const insert1 = document.getElementById("js-insertBtn");
 	const delect1 = document.getElementById("js-deleteBtn");
 	const update1 = document.getElementById("js-updateBtn");
 	const buttt = document.getElementById("js-modal-insert");
-	
-	function savebtn(){
-	
-		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + globalTitle + "&writtin=" + globalWrittin;
-		
-	}
-	
-	
-	update1.addEventListener("click", savebtn);
-	
 	
 	
 	function clickDeleteBtn(uid){
@@ -167,22 +161,21 @@
 	
 	function moveUp() {
 		
+		console.log(updateUid);
+		
 		const modalTitle = document.getElementById("modal_title");
 		const modalWrittin= document.getElementById("modal_writtin");
 		
-		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + modalTitle.value + "&writtin=" + modalwrittin.value;
+		location.href = "/events/schooleventupdate?uid=" + updateUid + "&title=" + modalTitle.value + "&writtin=" + modalWrittin.value;
 		
 		updateUid = '';
 		
-		console.log(jsndkendiwiednwed);
 	}
 	
 	function sendData(uid, title, writtin) {
 		
 		updateUid = uid;
-		globalTitle = title;
-		globalWrittin = writtin;
-		
+
 		const modalTitle = document.getElementById("modal_title");
 		modalTitle.value = title;
 		
@@ -218,6 +211,7 @@
 	// butt.addEventListener("click", moveButt);
 	
 	insert1.addEventListener("click", moveIn);
+	update1.addEventListener("click", moveUp);
 
 	/*
 		if(confirm("등록하시겠습니까?")) 

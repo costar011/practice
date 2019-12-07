@@ -12,7 +12,8 @@
 	</select>
 
 
-	<insert id="schoolInsert" parameterType="schooleventVO">
+	<insert id="insertAct" parameterType="schooleventVO">
+	
 		INSERT INTO SCHOOLEVENT
 		(
 		TITLE,

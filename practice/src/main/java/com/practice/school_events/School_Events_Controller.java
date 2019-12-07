@@ -33,11 +33,26 @@ public class School_Events_Controller {
 	// Insert
 	@RequestMapping("/eventInsert")
 	public String schoolevents() {
-		
-		
-		
-		
+	
 		return "eventInsert";
+		
+	}
+	
+	// eventInsertAction
+	@RequestMapping("/eventInsertAction")
+	public String eventInsertAction(@RequestParam("title")String title,
+									@RequestParam("writtin")String writtin) {
+		
+		System.out.println(title);
+		System.out.println(writtin);
+		
+		SchoolEventVO vo =  new SchoolEventVO();
+		vo.setTitle(title);
+		vo.setWrittin(writtin);
+		
+		ss.eventInsertAction(vo);
+		
+		return "redirect:schoolPage";
 		
 	}
 	
@@ -59,15 +74,17 @@ public class School_Events_Controller {
 	
 	// update
 	@RequestMapping("/schooleventupdate")
-	public String schooleventupdate(@RequestParam("title")String title
+	
+	public String schooleventupdate(@RequestParam("uid") String uid
+									,@RequestParam("title")String title
 									,@RequestParam("writtin")String writtin) {
 		
 		SchoolEventVO vo = new SchoolEventVO();
 		
-		System.out.println(title);
-		System.out.println(title);
-		System.out.println(title);
-		System.out.println(title);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
 		System.out.println(title);
 		System.out.println(title);
 		System.out.println(title);
@@ -77,11 +94,11 @@ public class School_Events_Controller {
 		System.out.println(title);
 		System.out.println(title);
 		
-		
+		vo.setUid(uid);
 		vo.setTitle(title);
 		vo.setWrittin(writtin);
 		
-		//ss.schooleventUpdate(vo);
+		ss.schooleventUpdate(vo);
 		
 		return "redirect:schoolPage";
 	}

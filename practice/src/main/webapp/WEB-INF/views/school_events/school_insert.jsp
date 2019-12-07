@@ -8,12 +8,12 @@
     
     <div class = "col-md-8">
     
-    <form action = "/events/eventInsert">
+    <form action = "${pageContext.request.contextPath }/events/eventInsertAction">
     
     	<br><br>
     	<input type = "text" class = "form-control" id = "title" name = "title" placeholder = "TITLE">
     	<br><br>
-    	<input type = "text" class = "form-control" id = "writtin" name = "writtin" placeholder = "writtin">
+    	<input type = "text" class = "form-control" id = "writtin" name = "writtin" placeholder = "WRITTIN">
     	<br><br> 
 	    <button type="submit" class="btn btn-info" id="js-insertBtn">등록</button>
 
@@ -25,8 +25,3 @@
     
     </div>
     
-    <script>
-    
-    
-    
-    </script>
