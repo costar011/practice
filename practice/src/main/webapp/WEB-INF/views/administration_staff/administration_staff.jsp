@@ -44,6 +44,7 @@
 						<td>${admin.email }</td>
 						<td>${admin.sal }</td>
 
+					    <td><button type="button" class="del-btn" onclick="moveDe(${admin.uid })">ªË¡¶</button></td>
 					</tr>
 
 				</c:forEach>
@@ -61,6 +62,8 @@
 	const admin = document.getElementById("adminBtn");
 	const teacher = document.getElementById("teachBtn");
 	const other = document.getElementById("otherBtn");
+	
+ 	const delete1 = document.getElementById("js-deleteBtn");
 
 	function moveOther() {
 		location.href = "/other_staff/otherstaffPage";
@@ -77,6 +80,17 @@
 	function moveCafe() {
 		location.href = "/cafeteria/cafeteriaPage";
 	}
+	
+	
+	function moveDe(uid) {
+		
+		console.log(uid);
+		console.log(uid);
+		console.log(uid);
+
+		
+		location.href = "/administration_staff/deleteStaff?uid=" + uid;
+	};
 
 	cafe.addEventListener("click", moveCafe);
 	admin.addEventListener("click", moveAdmin);

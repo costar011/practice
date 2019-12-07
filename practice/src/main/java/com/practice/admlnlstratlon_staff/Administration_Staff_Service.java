@@ -12,13 +12,19 @@ import com.practice.model.AdministrationVO;
 public class Administration_Staff_Service {
 	
 	@Resource(name = "admlnlstratlon_staff_Dao")
-	private Administration_Staff_Dao aDao;
+	private Administration_Staff_Dao aa;
 	
 	public List<AdministrationVO> selectAllAdmin() {
 		
-		List<AdministrationVO> list = aDao.selectAllAdmin();
+		List<AdministrationVO> list = aa.selectAllAdmin();
 		
 		return list;
+	}
+	
+	public void deleteStaff(String uid) {
+		
+		aa.deleteStaff(uid);
+		
 	}
 	
 

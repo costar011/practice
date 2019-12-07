@@ -6,7 +6,6 @@ import javax.annotation.Resource;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
-import org.springframework.ui.Model;
 
 import com.practice.model.OtherStaffVO;
 
@@ -25,5 +24,8 @@ public class Other_Staff_Dao {
 		
 	}
 	
-	
+	public void deleteOther(String uid) {
+		
+		sqlSessionTemplate.delete("otherstaff.deleteOther", uid);
+	}
 }

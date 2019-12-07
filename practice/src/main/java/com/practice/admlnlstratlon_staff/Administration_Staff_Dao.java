@@ -21,6 +21,20 @@ public class Administration_Staff_Dao {
 		
 		return list;
 		
+	}
+	
+	public void deleteStaff(String uid) {
+		
+		
+		System.out.println(uid);
+
+		System.out.println(uid);
+
+		System.out.println(uid);
+
+		System.out.println(uid);
+		
+		sqlSessionTemplate.delete("administration.deleteSta", uid);
 		
 	}
 

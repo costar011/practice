@@ -19,5 +19,12 @@
 	</select>
 
 
+	<delete id="deleteSta" parameterType="string">
+		
+		DELETE FROM ADMINISTRATION
+		 WHERE UID = #{uid}
+	
+	</delete>
+
 </mapper>
 

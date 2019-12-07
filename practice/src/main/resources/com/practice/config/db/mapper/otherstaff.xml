@@ -17,6 +17,13 @@
 					, SAL
 			  FROM OTHERSTAFF
 	</select>
+	
+	<delete id = "deleteOther" parameterType="string">
+	
+		DELETE FROM OTHERSTAFF
+		 WHERE UID = #{uid}
+	
+	</delete>
 
 
 </mapper>

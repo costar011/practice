@@ -12,14 +12,19 @@ import com.practice.model.OtherStaffVO;
 public class Other_Staff_Service {
 	
 	@Resource(name = "Other_Staff_Dao")
-	private Other_Staff_Dao sDao;
+	private Other_Staff_Dao aa;
 	
 	
 	public List<OtherStaffVO> selecList() {
 		
-		List<OtherStaffVO> list = sDao.selectOther();
+		List<OtherStaffVO> list = aa.selectOther();
 		
 		return list;
+	}
+	
+	public void deleteOther(String uid) {
+		
+		aa.deleteOther(uid);
 	}
 
 }

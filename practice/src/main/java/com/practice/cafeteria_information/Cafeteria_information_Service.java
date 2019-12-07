@@ -13,12 +13,16 @@ import com.practice.cafeteria_information.Cafeteria_information_Dao;
 public class Cafeteria_information_Service {
 	
 	@Resource(name = "cafeteria_information_Dao")
-	private Cafeteria_information_Dao cafeteriaDao;
+	private Cafeteria_information_Dao aa;
 	
 	public List<CafeteriaVO> selectCafeteria(){
-		List<CafeteriaVO> list = cafeteriaDao.selectCafeteria();
+		List<CafeteriaVO> list = aa.selectCafeteria();
 		
 		return list;
+	}
+	
+	public void deleteCafe(String uid) {
+		aa.deleteCafe(uid);
 	}
 
 }

@@ -17,6 +17,13 @@
 		  FROM	CAFETERIA
 	</select>
 	
+	<delete id = "deleteCafe" parameterType="string">
+	
+	DELETE FROM CAFETERIA
+	 WHERE UID = #{uid}
+	
+	</delete>
+	
 
 </mapper>
 
