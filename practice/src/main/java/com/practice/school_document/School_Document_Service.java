@@ -26,4 +26,10 @@ public class School_Document_Service {
 		aa.inserDocument(vo);
 	}
 
+	
+	public void deleteDocument(String uid) {
+		
+		aa.deleteDocument(uid);
+	}
+	
 }

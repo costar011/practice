@@ -27,5 +27,12 @@
   		)
   	</insert>  	
   	
+  	<delete id="deletedocument" parameterType="string">
+  	
+  	DELECT FROM SCHOOLDOCUMENT
+  	 WHERE UID = ${uid}
+  	 
+  	</delete>
+  	
    </mapper>
   
