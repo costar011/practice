@@ -27,10 +27,10 @@
   		)
   	</insert>  	
   	
-  	<delete id="deletedocument" parameterType="string">
+  	<delete id="documentDelete" parameterType="string">
   	
-  	DELECT FROM SCHOOLDOCUMENT
-  	 WHERE UID = ${uid}
+  	DELETE FROM SCHOOLDOCUMENT
+  	 WHERE UID = #{uid}
   	 
   	</delete>
   	

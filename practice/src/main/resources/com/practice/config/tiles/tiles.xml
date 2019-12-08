@@ -39,12 +39,6 @@
 			value="/WEB-INF/views/teacher_information/teacher_information.jsp" />
 	</definition>
 
-	<!-- community Place Page -->
-	<definition name="communityPage" extends="layout">
-		<put-attribute name="content"
-			value="/WEB-INF/views/community_place/community_place.jsp" />
-	</definition>
-
 	<!-- Payment Management Page -->
 	<definition name="paymentPage" extends="layout">
 		<put-attribute name="content"

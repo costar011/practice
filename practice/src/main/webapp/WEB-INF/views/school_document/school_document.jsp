@@ -172,11 +172,10 @@
 	
 	function clickDeleteBtn(uid) {
 		console.log(uid)
-		location.href = "/school/deleteschool_document?uid"+uid;
+		location.href = "/school/deleteschool_document?uid="+uid;
 	}
 	
 	function moveDe(uid) {
-		location.href = "/school/documentDelete?uid"+uid;
 		
 		console.log(uid);
 		console.log(uid); 
@@ -184,8 +183,11 @@
 		console.log(uid);
 		console.log(uid);
 		
+		location.href = "/school/documentDelete?uid="+uid;
+		
 	}
 	
 	moveInsert.addEventListener("click",moveIn);
+	
 	
 </script>

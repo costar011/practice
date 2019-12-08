@@ -37,11 +37,10 @@ public class School_Document_Controller {
 	}
 
 	@RequestMapping("/documentInsert")
-	public String documentInsert(@RequestParam("title") String title,
-			                     @RequestParam("author") String author) {
+	public String documentInsert(@RequestParam("title") String title, @RequestParam("author") String author) {
 
 		DocumentVO vo = new DocumentVO();
-		
+
 		System.out.println(title);
 		System.out.println(author);
 		System.out.println(title);
@@ -64,15 +63,23 @@ public class School_Document_Controller {
 
 		return "redirect:schoolPage";
 	}
-	
+
 	@RequestMapping("/documentDelete")
-	public String documentDelete(@RequestParam("uid")String uid) {
-		
+	public String documentDelete(@RequestParam("uid") String uid) {
+
 		aa.deleteDocument(uid);
-		
+
 		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+
 		return "redirect:schoolPage";
-		
+
 	}
 
 }

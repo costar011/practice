@@ -23,13 +23,12 @@ public class School_Document_Dao {
 	}
 
 	public void inserDocument(DocumentVO vo) {
-		sqlSessionTemplate.insert("insertdocument", vo);
+		sqlSessionTemplate.insert("document.insertdocument", vo);
 	}
 
-	
 	public void deleteDocument(String uid) {
-		
-		sqlSessionTemplate.delete("deleteDocument", uid);
-		
+
+		sqlSessionTemplate.delete("document.documentDelete", uid);
+
 	}
 }
