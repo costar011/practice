@@ -21,7 +21,7 @@
 	<div class="masthead">
 		<h3 class="text-muted">School Administration System</h3>
 		<div>
-			
+
 			<ul class="LoginArea">
 				<c:if test="${!empty login_id}">
 					<li class="LoginArea__list"><a
@@ -36,7 +36,8 @@
 					<li class="LoginArea__list"><a
 						href="${pageContext.request.contextPath }/signin/signinPage">Login</a></li>
 					<li class="LoginArea__list"><a
-						href="${pageContext.request.contextPath }/signup/signupPage">Sign Up</a></li>
+						href="${pageContext.request.contextPath }/signup/signupPage">Sign
+							Up</a></li>
 				</c:if>
 			</ul>
 
@@ -59,9 +60,6 @@
 				<li><a
 					href="${pageContext.request.contextPath }/events/schoolPage">School
 						Events</a></li>
-				<li><a
-					href="${pageContext.request.contextPath }/community/communityPage">Community
-						Place</a></li>
 				<li><a
 					href="${pageContext.request.contextPath }/student/studentPage">Student
 						Activities</a></li>
