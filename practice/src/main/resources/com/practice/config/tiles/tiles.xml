@@ -134,6 +134,13 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/payment_management/student.jsp" />
 	</definition>
+	
+	
+		<!-- Payment_Management_teacher Page -->
+	<definition name="teachPage" extends="layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/payment_management/teacher.jsp" />
+	</definition>
 
 	<!-- INSERT STUDENT -->
 	<definition name="insertPage" extends="layout">

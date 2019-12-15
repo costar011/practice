@@ -29,7 +29,7 @@ public class payment_Management_Controller {
 		return "paymentPage";
 	}
 
-	@RequestMapping("/teacherPage")
+	@RequestMapping("/teachPage")
 	public String teacher(Model model) {
 
 		System.out.println("33333333");

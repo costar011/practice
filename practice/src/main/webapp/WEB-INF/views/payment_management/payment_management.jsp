@@ -98,7 +98,7 @@
 	}
 
 	function moveTeacher() {
-		location.href = "/payment/teacherPage";
+		location.href = "/payment/teachPage";
 	}
 
 	function moveStudent() {
